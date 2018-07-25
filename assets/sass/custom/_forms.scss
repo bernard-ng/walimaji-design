@@ -9,12 +9,18 @@ $txt-light-color: #ddd;
     background-attachment: scroll;
     background-size: cover;
     background-blend-mode: overlay;
+    display: block;
+    height: 300px !important;
+    width: 100%;
+    border-bottom: 5px solid #247e73;
 }
 
 
 #loginBox,
 #signUpBox {
     border-radius: 3px;
+    border-bottom: 5px solid #247e73;
+    border-top: 5px solid #247e73;
     margin-top: 10%;
     padding: 25px !important;
     width: 100% !important;
@@ -23,7 +29,7 @@ $txt-light-color: #ddd;
     -o-transition: all linear 0.3s;
     transition: all linear 0.3s;
     position: absolute;
-    top: 89px;
+    top: 70px;
     left: 50%;
     -webkit-transform: translateY(-70px) translateX(-50%);
     -ms-transform: translateY(-70px) translateX(-50%);
