@@ -4,5 +4,6 @@ $('document').ready(function () {
         menuWidth: 300,
         edge: 'left',
     });
+    $('select').material_select();
 
 })

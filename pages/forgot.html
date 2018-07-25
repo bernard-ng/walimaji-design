@@ -16,38 +16,23 @@
             <div class="row col l4 m4 s12">
                 <div class="card-panel z-depth-2 hoverable" id="loginBox">
                     <h2 class="hero-title grey-text text-darken-4 center">walimaji</h2>
-                    <p>Connexion</p>
                     <form method="POST" action="" data-action="login" autocomplete="off">
                         <div class="row">
+                            <p>
+                                Veuillez renseigner l'adresse mail avec laquelle vous vous étiez inscrit, afin d'obtenir les instruction de rappel de mot
+                                de passe.
+                            </p>
                             <div class="input-field col s12">
-                                <label for="name">name</label>
-                                <input type="text" name="name" id="name" class="validate " value="">
-                                <span class="helper-text red-txt">
-
-                                </span>
-                            </div>
-                            <div class="input-field col s12">
-                                <label for="password">password</label>
-                                <input type="password" name="password" id="password" class="validate " value="">
+                                <label for="name">email</label>
+                                <input type="email" name="email" id="email" class="validate " value="">
                                 <span class="helper-text red-txt">
 
                                 </span>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="row col s12" id="cookieOptions">
-                                <input type="checkbox" class="filled-in cyan darken-2" id="remember" name="remember" value='1' />
-                                <label for="remember">Rester connecté</label>
-                            </div>
-
                             <div class="col s12" id="connectOptions">
-                                <button type="submit" class="btn btn-flat waves-effect teal white-text" id="connect">Connexion</button>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col s12">
-                                <a href="forgot.html" class="forgot">Mot de passe oublié</a>
+                                <button type="submit" class="btn btn-flat waves-effect teal white-text" id="connect">Envoyer</button>
                             </div>
                         </div>
                     </form>
