@@ -5,6 +5,7 @@
   border-radius: $button-radius;
   display: inline-block;
   height: $button-height;
+  width: 100%;
   line-height: $button-height;
   padding: $button-padding;
   text-transform: uppercase;
@@ -28,7 +29,8 @@
 .btn-flat[disabled] {
   pointer-events: none;
   background-color: $button-disabled-background !important;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   color: $button-disabled-color !important;
   cursor: default;
 
@@ -68,6 +70,8 @@
   text-align: center;
   letter-spacing: .5px;
   @extend .z-depth-1;
+  -webkit-transition: .2s ease-out;
+  -o-transition: .2s ease-out;
   transition: .2s ease-out;
   cursor: pointer;
 
@@ -123,6 +127,8 @@
   background-color: $button-floating-background;
   border-radius: $button-floating-radius;
   @extend .z-depth-1;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
   transition: .3s;
   cursor: pointer;
   vertical-align: middle;
@@ -157,7 +163,9 @@ button.btn-floating {
       text-align: right;
       right: 64px;
       top: 50%;
-      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
       height: 100%;
       left: auto;
       width: 500px; /*width 100% only goes to width of button container */
@@ -180,16 +188,22 @@ button.btn-floating {
     height: $button-floating-large-size;
 
     ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       top: 0;
       bottom: 0;
       z-index: 1;
 
       li {
-        flex: 1;
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
         display: inline-block;
         margin: 0;
         height: 100%;
+        -webkit-transition: none;
+        -o-transition: none;
         transition: none;
 
         a {
@@ -199,7 +213,8 @@ button.btn-floating {
           width: 100%;
           height: 100%;
           background-color: transparent;
-          box-shadow: none;
+          -webkit-box-shadow: none;
+                  box-shadow: none;
           color: #fff;
           line-height: $button-floating-large-size;
           z-index: 1;
@@ -246,21 +261,27 @@ button.btn-floating {
     height: $button-floating-size;
     background-color: $button-floating-background;
     border-radius: $button-floating-radius;
-    transform: scale(0);
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
   }
 }
 
 // Flat button
 .btn-flat {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   background-color: transparent;
   color: $button-flat-color;
   cursor: pointer;
+  -webkit-transition: background-color .2s;
+  -o-transition: background-color .2s;
   transition: background-color .2s;
 
   &:focus,
   &:hover {
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 
   &:focus {

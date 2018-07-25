@@ -1,0 +1,82 @@
+$txt-color: #ccc;
+$txt-light-color: #ddd;
+
+.form-background {
+    background: -o-linear-gradient(left bottom, #247e73, #009980, #00b587, #00d088, #12eb83);
+    background: -webkit-gradient(linear, left bottom, right top, from(#247e73), color-stop(#009980), color-stop(#00b587), color-stop(#00d088), to(#12eb83));
+    background: linear-gradient(to right top, #247e73, #009980, #00b587, #00d088, #12eb83);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+
+#loginBox,
+#signUpBox {
+    border-radius: 3px;
+    margin-top: 10%;
+    padding: 25px !important;
+    width: 100% !important;
+    height: auto;
+    -webkit-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+    position: absolute;
+    top: 89px;
+    left: 50%;
+    -webkit-transform: translateY(-70px) translateX(-50%);
+    -ms-transform: translateY(-70px) translateX(-50%);
+    transform: translateY(-70px) translateX(-50%);
+}
+
+.transparent-form {
+    border-radius: 3px;
+    padding: 15px 10px 15px !important;
+    width: 100% !important;
+    height: auto;
+    -webkit-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+    input {
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    #loginBox,
+    #signUpBox {
+        width: 500px !important;
+        height: auto;
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        -webkit-transform: translateY(-70px) translateX(-50%);
+        -ms-transform: translateY(-70px) translateX(-50%);
+        transform: translateY(-70px) translateX(-50%);
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    #loginBox,
+    #signUpBox {
+        width: 500px !important;
+        height: auto;
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        -webkit-transform: translateY(-70px) translateX(-50%);
+        -ms-transform: translateY(-70px) translateX(-50%);
+        transform: translateY(-70px) translateX(-50%);
+    }
+}
+
+#loginBox a.forgot,
+#signUpBox a.forgot {
+    float: right !important
+}
+
+#loginBox a.forgot:hover,
+#signUpBox a.forgot:hover {
+    text-decoration: underline
+}
