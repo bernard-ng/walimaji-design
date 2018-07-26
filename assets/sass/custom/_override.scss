@@ -1,6 +1,13 @@
 .hero-title {
-    font-family: 'hero';
+    font-family: 'hero-2';
     font-style: normal;
     font-weight: bold;
     color: #fff;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.bgl {
+    background-image: -o-linear-gradient(right top, #247e73, #009980, #00b587, #00d088, #12eb83);
+    background-image: -webkit-gradient(linear, right top, left bottom, from(#247e73), color-stop(#009980), color-stop(#00b587), color-stop(#00d088), to(#12eb83));
+    background-image: linear-gradient(to left bottom, #247e73, #009980, #00b587, #00d088, #12eb83);
 }

@@ -4,6 +4,13 @@
     font-weight: bold;
 }
 
+@font-face {
+    font-family: 'hero-2';
+    src: url('#{$roboto-font-path}/hero-2.otf') format('otf');
+    font-weight: bold;
+}
+
+
 
 @font-face {
     font-family: "Roboto";

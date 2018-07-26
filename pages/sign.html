@@ -9,14 +9,13 @@
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
-<body class="grey darken-4"
+<body>
     <main>
         <div class="form-background"></div>
         <div class="container">
             <div class="row col l4 m4 s12">
                 <div class="card-panel z-depth-2 hoverable" id="loginBox">
                     <h2 class="hero-title grey-text text-darken-4 center">walimaji</h2>
-                    <p>Inscription</p>
                     <form method="POST" action="" data-action="login" autocomplete="off">
                         <div class="row">
                             <div class="input-field col s12">
@@ -36,6 +35,11 @@
                                 <input type="password" name="password" id="password" class="validate " value="">
                                 <span class="helper-text red-txt"></span>
                             </div>
+                             <div class="input-field col s12">
+                                <label for="password">password (confirm)</label>
+                                <input type="password" name="password" id="password" class="validate " value="">
+                                <span class="helper-text red-txt"></span>
+                            </div>
                         </div>
                         <div class="row">
 
@@ -46,7 +50,7 @@
 
                         <div class="row">
                             <div class="col s12">
-                                <a href="login.html" class="forgot">Me connecter</a>
+                                <a href="login.html" class="forgot">J'ai déjà un compte</a>
                             </div>
                         </div>
                     </form>
