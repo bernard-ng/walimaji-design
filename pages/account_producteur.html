@@ -12,45 +12,63 @@
 
 <body>
     <!--Entete-->
-    <header id="map-header" class="map-header">
+    <header id="accout_header" class="account_header">
         <div class="navbar-fixed">
             <nav class="nav-extended">
                 <div class="nav-wrapper teal z-depth-3">
                     <div class="container">
+                        <a href="" data-activates="slide-out" class="button-collapse show-on-large">
+                            <i class="material-icons">menu</i>
+                        </a>
                         <a href="home.html" class="brand-logo">walimaji</a>
                     </div>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li>
+                            <a href="#">Button 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Button 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Button 3</a>
+                        </li>
+                        <li>
+                            <a href="#">Button 4</a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </div>
-        <div class="nav-content grey darken-4 z-depth-4">
-            <div class="container">
-                <ul class="tabs tabs-transparent col s12">
-                    <li class="tab col s3">
-                        <a class="active" href="#">Mon profil</a>
-                    </li>
-                    <li class="tab col s3">
-                        <a href="my_production.html">Mes productions</a>
-                    </li>
-                    <li class="tab col s3">
-                        <a href="provider.html">Mes fournisseurs</a>
-                    </li>
-                    <li class="tab col s3">
-                        <a href="customer.html">Mes clients</a>
-                    </li>
-                    <li class="tab col s3">
-                        <a href="#" class="dropdown-trigger" data-target="parameter" >
-                            <i class="small material-icons center">settings</i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <ul id="parameter" class="dropdown-content">
+
+        <ul id="slide-out" class="side-nav">
             <li>
-                <a href="#">Paramètres </a>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="../images/vert.jpg">
+                    </div>
+                    <a href="#!user">
+                        <img src="../images/user_profile2.png">
+                    </a>
+                    <a href="#!name">
+                        <span class="white-text name">username</span>
+                    </a>
+                    <a href="#!email">
+                        <span class="white-text email">user@mail.com</span>
+                    </a>
+                </div>
             </li>
             <li>
-                <a href="#">Deconnexion </a>
+                <a href="#!">
+                    <i class="material-icons">cloud</i>First Link With Icon</a>
+            </li>
+            <li>
+                <a href="#!">mon profile</a>
+            </li>
+            <li>
+                <a href="#!">mes recents</a>
+            </li>
+            <li>
+                <a href="#!">mon profile</a>
             </li>
         </ul>
 
@@ -75,8 +93,10 @@
 
 
 
+    <script src="../assets/js/bin/jquery.min.js"></script>
     <script src="../assets/js/bin/materialize.min.js"></script>
     <script src="../assets/js/bin/app.init.js"></script>
+    <script src="../"></script>
 </body>
 
 </html>
