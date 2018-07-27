@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,162 +9,234 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
-    
+
 </head>
+
 <body>
-    <div class ="container">
-            <div class="row">
-                 <!-- first card -->
-                <div class="col l3 s12 m6">
-                    <div class = "card deep-orange darken-4">
-                        <div class ="card-content white-text" >
-                            <p>
-                                23,363 kg</br>
-                                Production</br>
-                            </p>
-                            <div class="card-revereal">
-                                <a href="#" class = white-text >
-                                </br><i class="material-icons right">more_vert</i></br>
-                                </a>
-                            </div>
+    <header>
+        <div class="navbar-fixed">
+            <nav class="nav-extended">
+                <div class="nav-wrapper teal z-depth-3">
+                    <div class="container">
+                        <a href="#" data-activates="slide-out" class="button-collapse show-on-large">
+                            <i class="material-icons">menu</i>
+                        </a>
+                        <a href="home.html" class="brand-logo">walimaji</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <ul id="slide-out" class="side-nav">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="../images/walimaji-2.jpg">
+                    </div>
+                    <a href="#!user">
+                        <img class="circle" src="../images/profile.png">
+                    </a>
+                    <a href="#!name">
+                        <span class="white-text name">username</span>
+                    </a>
+                    <a href="#!email">
+                        <span class="white-text email">user@mail.com</span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="#!">
+                    <i class="material-icons">cloud</i>First Link With Icon</a>
+            </li>
+            <li>
+                <a href="#!">Second Link</a>
+            </li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li>
+                <a class="subheader">Subheader</a>
+            </li>
+            <li>
+                <a class="waves-effect" href="#!">Third Link With Waves</a>
+            </li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="row">
+            <!-- first card -->
+            <div class="col l3 s12 m6">
+                <div class="card deep-orange darken-4">
+                    <div class="card-content white-text">
+                        <p>
+                            23,363 kg</br>
+                            Production</br>
+                        </p>
+                        <div class="card-revereal">
+                            <a href="#" class=w hite-text>
+                                </br>
+                                <i class="material-icons right">more_vert</i>
+                                </br>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <!-- second card -->
-                <div class="col l3 s12 m6">
-                        <div class = "card brown darken-4">
-                            <div class ="card-content white-text" >
-                                <p>
-                                    10,260 kg</br>
-                                    transformation </br>
-                                </p>
-                                <div class="card-revereal">
-                                    <a href="#" class = white-text >
-                                    </br><i class="material-icons right">more_vert</i></br>
-                                    </a>
-                                </div>
-                            </div>
+            </div>
+            <!-- second card -->
+            <div class="col l3 s12 m6">
+                <div class="card brown darken-4">
+                    <div class="card-content white-text">
+                        <p>
+                            10,260 kg</br>
+                            transformation </br>
+                        </p>
+                        <div class="card-revereal">
+                            <a href="#" class=w hite-text>
+                                </br>
+                                <i class="material-icons right">more_vert</i>
+                                </br>
+                            </a>
                         </div>
                     </div>
-
-                    <!-- third card -->
-                <div class="col l3 s12 m6">
-                        <div class = "card grey darken-3">
-                            <div class ="card-content white-text" >
-                                <p>
-                                    21,311 kg</br>
-                                    ventes </br>
-                                </p>
-                                <div class="card-revereal">
-                                    <a href="#" class= "white-text" >
-                                    </br><i class="material-icons right">more_vert</i></br>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                        <!-- fourth card -->
-                <div class="col l3 s12 m6">
-                        <div class = "card teal darken-3">
-                            <div class ="card-content white-text" >
-                                <p>
-                                    18,852 kg</br>
-                                    Achats </br>
-                                </p>
-                                <div class="card-revereal">
-                                    <a href="#" class= "white-text" >
-                                    </br><i class="material-icons right">more_vert</i></br>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
                 </div>
             </div>
 
-            <!--Second row-->
-            <div class="row">
-                    <!--first card chart1-->
-                    <div class="col l8 s12 m6">
-                        <div class="card ">
-                            <div class="card-revereal">
-                                <a href="#" class= "black-text">
-                                    </br><i class= "material-icons right">more_vert</i>
-                                </a>
-                                <h5 align="center">Aperçu des processus repartis durant l'année (%)</h5>
-                                <div id="area-chart" ></div>
-                            </div>
+            <!-- third card -->
+            <div class="col l3 s12 m6">
+                <div class="card grey darken-3">
+                    <div class="card-content white-text">
+                        <p>
+                            21,311 kg</br>
+                            ventes </br>
+                        </p>
+                        <div class="card-revereal">
+                            <a href="#" class="white-text">
+                                </br>
+                                <i class="material-icons right">more_vert</i>
+                                </br>
+                            </a>
                         </div>
                     </div>
+                </div>
+            </div>
 
-                    <!--second card -->
-                    <div class="col l4 s12 m6">
-                            <div class="card ">
-                                <div class="card-revereal">
-                                        <a href="#" class = "black-text">
-                                            </br><i class = "material-icons right ">more_vert</i>
-                                        </a>
-                                        <h5>Etats</h5> 
-                                        <ul class="collection">
-                                            <!--<li class="collection-item producteur"> 
+            <!-- fourth card -->
+            <div class="col l3 s12 m6">
+                <div class="card teal darken-3">
+                    <div class="card-content white-text">
+                        <p>
+                            18,852 kg</br>
+                            Achats </br>
+                        </p>
+                        <div class="card-revereal">
+                            <a href="#" class="white-text">
+                                </br>
+                                <i class="material-icons right">more_vert</i>
+                                </br>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Second row-->
+        <div class="row">
+            <!--first card chart1-->
+            <div class="col l8 s12 m6">
+                <div class="card ">
+                    <div class="card-revereal">
+                        <a href="#" class="black-text">
+                            </br>
+                            <i class="material-icons right">more_vert</i>
+                        </a>
+                        <h5 align="center">Aperçu des processus repartis durant l'année (%)</h5>
+                        <div id="area-chart"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--second card -->
+            <div class="col l4 s12 m6">
+                <div class="card ">
+                    <div class="card-revereal">
+                        <a href="#" class="black-text">
+                            </br>
+                            <i class="material-icons right ">more_vert</i>
+                        </a>
+                        <h5>Etats</h5>
+                        <ul class="collection">
+                            <!--<li class="collection-item producteur"> 
                                                     <i class=" medium material-icons left ">trending_up</i>
                                                     <span class="title"> 
                                                         <p> Terrains de production</br>20,260 hectares</p>
                                                     </span>
                                                 
                                             </li>-->
-                                            <li class="collection-item producteur"> 
-                                                <i class=" medium material-icons left ">local_grocery_store</i>
-                                                <span class="title"> 
-                                                    <p>Producteurs</br>271</p>
-                                                </span>
-                                            
-                                        </li>
-                                           <li class="collection-item producteur"> 
-                                                    <i class=" medium material-icons left ">trending_up</i>
-                                                    <span class="title"> 
-                                                        <p>Entreprises de transformations</br> 489</p>
-                                                    </span>
-                                                
-                                            </li>
-                                            <li class="collection-item producteur"> 
-                                                    <i class=" medium material-icons left">local_grocery_store</i>
-                                                    <span class="title"> 
-                                                        <p>Commercants(grossistes)</br> 4,586</p>
-                                                    </span>
-                                            </li>
-                                        </ul>
-                                </div>
-                            </div>
+                            <li class="collection-item producteur">
+                                <i class=" medium material-icons left ">local_grocery_store</i>
+                                <span class="title">
+                                    <p>Producteurs</br>271</p>
+                                </span>
+
+                            </li>
+                            <li class="collection-item producteur">
+                                <i class=" medium material-icons left ">trending_up</i>
+                                <span class="title">
+                                    <p>Entreprises de transformations</br> 489</p>
+                                </span>
+
+                            </li>
+                            <li class="collection-item producteur">
+                                <i class=" medium material-icons left">local_grocery_store</i>
+                                <span class="title">
+                                    <p>Commercants(grossistes)</br> 4,586</p>
+                                </span>
+                            </li>
+                        </ul>
                     </div>
+                </div>
             </div>
+        </div>
     </div>
 </body>
-    <script src="../assets/js/bin/jquery.min.js"></script>
-    <script src="../assets/js/bin/materialize.min.js"></script>
-    <script src="../assets/js/morris/morris.min.js"></script>
-    <script src="../assets/js/bin/raphael.js"></script>
-   <script> 
-            /*--script--*/ 
-            new Morris.Donut({
-            // ID of the element in which to draw the chart.
-            element: 'area-chart',
-            // Chart data records -- each entry in this array corresponds to a point on
-            // the chart.
-            data: [
-                { label: 'Production', value: 100 },
-                { label: 'Transformation', value: 52 },
-                { label: 'Ventes', value: 89 },
-                { label: 'Achats', value: 75 }
-            ],
-            /*// The name of the data record attribute that contains x-values.
-            xkey: 'year',
-            // A list of names of data record attributes that contain y-values.
-            ykeys: ['value'],
-            // Labels for the ykeys -- will be displayed when you hover over the
-            // chart.
-            labels: ['Value'],
-            hideHover : true,*/
-            });
-   </script>
+<script src="../assets/js/bin/jquery.min.js"></script>
+<script src="../assets/js/bin/materialize.min.js"></script>
+<script src="../assets/js/morris/morris.min.js"></script>
+<script src="../assets/js/bin/raphael.js"></script>
+<script src="../assets/js/bin/app.init.js"></script>
+<script>
+    /*--script--*/
+    new Morris.Donut({
+        // ID of the element in which to draw the chart.
+        element: 'area-chart',
+        // Chart data records -- each entry in this array corresponds to a point on
+        // the chart.
+        data: [{
+                label: 'Production',
+                value: 100
+            },
+            {
+                label: 'Transformation',
+                value: 52
+            },
+            {
+                label: 'Ventes',
+                value: 89
+            },
+            {
+                label: 'Achats',
+                value: 75
+            }
+        ],
+        /*// The name of the data record attribute that contains x-values.
+        xkey: 'year',
+        // A list of names of data record attributes that contain y-values.
+        ykeys: ['value'],
+        // Labels for the ykeys -- will be displayed when you hover over the
+        // chart.
+        labels: ['Value'],
+        hideHover : true,*/
+    });
+</script>
+
 </html>
