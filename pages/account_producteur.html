@@ -12,7 +12,7 @@
 
 <body>
     <!--Entete-->
-    <header id="accout_header" class="account_header">
+    <header id="account_header" class="account_header">
         <div class="navbar-fixed">
             <nav class="nav-extended">
                 <div class="nav-wrapper teal z-depth-3">
@@ -63,31 +63,56 @@
                 </a>
             </li>
             <li>
-                <a href="#!">mon profile</a>
+                <a href="#!">Mon compte</a>
             </li>
             <li>
-                <a href="#!">mes recents</a>
+                <a href="#!">Mes photos</a>
             </li>
             <li>
-                <a href="#!">mon profile</a>
+                <a href="#!">Deconnexion</a>
             </li>
         </ul>
 
     </header>
     <main>
-        <iframe id="map1" class="col s12" width="900vh" height="500vh" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=27.450113296508793%2C-11.694011998101614%2C27.545900344848636%2C-11.6452591831022&amp;layer=mapnik"
-            style="border-bottom: 5px dashed #ccc">
-        </iframe>
+        <div class="row">
+            <div class="col s12 m7">
+                <iframe id="map1" class="col s12" width="1200vh" height="500vh" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=27.450113296508793%2C-11.694011998101614%2C27.545900344848636%2C-11.6452591831022&amp;layer=mapnik"
+                    style="border-bottom: 5px dashed #ccc">
+                </iframe>
+            </div>
+            <div class=" col l5 s12 m7 ">
+                <div class="carousel carousel-slider center" data-indicators="true">
+                    
+                    <div class="carousel-item red white-text" href="#one!">
+                        <h2>First Panel</h2>
+                        <p class="white-text">This is your first panel</p>
+                    </div>
+                    <div class="carousel-item amber white-text" href="#two!">
+                        <h2>Second Panel</h2>
+                        <p class="white-text">This is your second panel</p>
+                    </div>
+                    <div class="carousel-item green white-text" href="#three!">
+                        <h2>Third Panel</h2>
+                        <p class="white-text">This is your third panel</p>
+                    </div>
+                    <div class="carousel-item blue white-text" href="#four!">
+                        <h2>Fourth Panel</h2>
+                        <p class="white-text">This is your fourth panel</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer class="page-footer white">
-            <div class="footer-copyright teal">
-                <div class="container">
-                    © 2018 Copyright walimaji.org
-                    <a class="grey-text text-lighten-4 right" href="https://github.com/itotafrica/walimaji">code source</a>
-                </div>
+        <div class="footer-copyright teal">
+            <div class="container">
+                © 2018 Copyright walimaji.org
+                <a class="grey-text text-lighten-4 right" href="https://github.com/itotafrica/walimaji">code source</a>
             </div>
+        </div>
     </footer>
 
     <script src="../assets/js/bin/jquery.min.js"></script>
