@@ -31,11 +31,23 @@
                             </div>
 
                             <div class="input-field col s12">
+                                <select>
+                                    <option value="" disabled selected>Choississez votre type</option>
+                                    <option value="1">Producteur</option>
+                                    <option value="2">Trader</option>
+                                    <option value="3">Transformateur</option>
+                                    <option value="4">Fournisseur d'intrants</option>
+                                    <option value="5">Gouvernement</option>
+                                </select>
+                                <label>Materialize Select</label>
+                            </div>
+
+                            <div class="input-field col s12">
                                 <label for="password">password</label>
                                 <input type="password" name="password" id="password" class="validate " value="">
                                 <span class="helper-text red-txt"></span>
                             </div>
-                             <div class="input-field col s12">
+                            <div class="input-field col s12">
                                 <label for="password">password (confirm)</label>
                                 <input type="password" name="password" id="password" class="validate " value="">
                                 <span class="helper-text red-txt"></span>
@@ -62,5 +74,6 @@
 
 <script src="../assets/js/bin/jquery.min.js"></script>
 <script src="../assets/js/bin/materialize.min.js"></script>
+<script src="../assets/js/bin/app.init.js"></script>
 
 </html>
