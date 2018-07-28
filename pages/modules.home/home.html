@@ -3,60 +3,130 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>walimaji maps</title>
 
     <link rel="stylesheet" href="../../assets/css/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Document</title>
+
+    <style>
+    </style>
 </head>
 
 <body>
 
-    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////
-           paralax container here
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-    <div id="index-banner" class="parallax-container">
-        <div class="section no-pad-bot">
-            <div class="container">
-                <br>
-                <br>
-                <h1 class="header center white-text hero-title">walimaji</h1>
-                <div class="row center">
-                    <h5 class="header col s12 light white-text">Plateforme qui optimise la chaine de valeur agroalimentaire en résolvant l’asymétrie d’information entre
-                        ses différents acteurs.</h5>
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////
+             maps header here
+        /////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <header id="map-header" class="map-header">
+        <div class="navbar-fixed">
+            <nav class="nav-extended">
+                <div class="nav-wrapper teal z-depth-3">
+                    <div class="container">
+                        <a href="#" data-activates="slide-out" class="button-collapse show-on-large">
+                            <i class="material-icons">menu</i>
+                        </a>
+                        <a href="index.html" class="brand-logo">WalimajI</a>
+                    </div>
                 </div>
-                <div class="row center">
-                    <a href="map.html" id="download-button" class="btn-floating btn-large waves-effect waves-light teal">
-                        <i class="material-icons">location_on</i>
+            </nav>
+        </div>
+        <ul id="slide-out" class="side-nav">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="../../images/walimaji-2.jpg">
+                    </div>
+                    <a href="#!user">
+                        <img class="circle" src="../../images/profile.png">
+                    </a>
+                    <a href="#!name">
+                        <span class="white-text name">username</span>
+                    </a>
+                    <a href="#!email">
+                        <span class="white-text email">user@mail.com</span>
                     </a>
                 </div>
-                <br>
-                <br>
+            </li>
+            <li>
+                <a href="#!">
+                    <i class="material-icons">cloud</i>First Link With Icon</a>
+            </li>
+            <li>
+                <a href="#!">mon profile</a>
+            </li>
+            <li>
+                <a href="#!">mes recents</a>
+            </li>
+            <li>
+                <a href="#!">mon profile</a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+
+        <!--//////////////////////////////////////////////////////////////////////////////////////////////////
+             maps should be generated here
+        /////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="map-container z-depth-3">
+            <map class="map-container-content" id="map"></map>
+            <div class="map-search-btn toolbar">
+                <a class="btn-floating btn-large teal z-depth-1 waves-effect waves-light">
+                    <i class="material-icons">search</i>
+                </a>
             </div>
         </div>
-        <div class="parallax">
-            <img src="../../images/walimaji.jpg" alt="Unsplashed background img 1">
-        </div>
-    </div>
 
+
+        <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////
+            about should be generate here
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <div class="parallax-container valign-wrapper map-banner" style="background: url('../../images/walimaji.jpg');">
+            <div class="container map-banner-content">
+                <div class="section">
+                    <div class="row">
+                        <div class="col s12 m4 center-align">
+                            <div class="icon-block">
+                                <h3 class="center white-text"><i class="material-icons">flash_on</i></h3>
+                                <h5 class="center white-text">Speeds up development</h5>
+                                <p class="light white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam consequuntur cum cupiditate dolores ducimus earum eligendi, est, in labore molestiae nostrum officiis perspiciatis possimus quis rem reprehenderit sed ullam!</p>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m4 center-align">
+                            <div class="icon-block">
+                                <h3 class="center white-text"><i class="material-icons">group</i></h3>
+                                <h5 class="center white-text">User Experience Focused</h5>
+
+                                <p class="light white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, aut consequatur distinctio dolore dolorem earum explicabo facere facilis, inventore ipsa itaque nam omnis pariatur possimus rerum sequi similique sunt voluptatibus.</p>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m4 center-align">
+                            <div class="icon-block">
+                                <h3 class="center white-text"><i class="material-icons">settings</i></h3>
+                                <h5 class="center white-text">Easy to work with</h5>
+
+                                <p class="light white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam architecto aspernatur consequuntur cumque dolor enim excepturi, exercitationem id itaque labore laboriosam minus non numquam quis sint tempore, unde voluptatem?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="map-banner-overlay"></div>
+        </div>
+    </main>
 
 
     <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////
             footer here
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-    <footer class="page-footer grey darken-4">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">A propos</h5>
-                    <p class="grey-text text-lighten-4">
-                        Plateforme qui optimise la chaine de valeur agroalimentaire en résolvant l’asymétrie d’information entre ses différents acteurs.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright teal">
+    <footer class="page-footer transparent">
+        <div class="footer-copyright grey darken-4">
             <div class="container">
                 © 2018 Copyright walimaji.org
                 <a class="grey-text text-lighten-4 right" href="https://github.com/itotafrica/walimaji">code source</a>
