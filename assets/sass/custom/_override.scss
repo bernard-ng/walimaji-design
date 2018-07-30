@@ -10,3 +10,23 @@
     background-image: -webkit-gradient(linear, right top, left bottom, from(#247e73), color-stop(#009980), color-stop(#00b587), color-stop(#00d088), to(#12eb83));
     background-image: linear-gradient(to left bottom, #247e73, #009980, #00b587, #00d088, #12eb83);
 }
+
+::-moz-selection {
+    background: #009688;
+    color: #fff;
+}
+
+::selection {
+    background: #009688;
+    color: #fff;
+}
+
+::-moz-selection {
+    background: #009688;
+    color: #fff;
+}
+
+::selection {
+    background: #009688;
+    color: #fff;
+}

@@ -6,5 +6,6 @@ $('document').ready(function () {
         edge: 'left',
     });
     $('select').material_select();
+    $('.modal').modal();
 
 })

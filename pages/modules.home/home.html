@@ -10,16 +10,12 @@
 
     <link rel="stylesheet" href="../../assets/css/style.css">
 
-    <style>
-    </style>
+    <style></style>
 </head>
 
 <body>
 
-
-    <!--//////////////////////////////////////////////////////////////////////////////////////////////////
-             maps header here
-        /////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////////////////////////// maps header here /////////////////////////////////////////////////////////////////////////////////////////////////////-->
     <header id="map-header" class="map-header">
         <div class="navbar-fixed">
             <nav class="nav-extended">
@@ -37,7 +33,7 @@
             <li>
                 <div class="user-view">
                     <div class="background">
-                        <img src="../../images/walimaji-2.jpg">
+                        <img src="../../images/default-cover.jpg" class="responsive-img">
                     </div>
                     <a href="#!user">
                         <img class="circle" src="../../images/profile.png">
@@ -52,81 +48,77 @@
             </li>
             <li>
                 <a href="#!">
-                    <i class="material-icons">cloud</i>First Link With Icon</a>
+                    <i class="material-icons">person</i>mon profile</a>
             </li>
             <li>
-                <a href="#!">mon profile</a>
+                <a href="#!">
+                    <i class="material-icons">show_chart</i> Mes activités</a>
             </li>
             <li>
-                <a href="#!">mes recents</a>
+                <a href="#!">
+                    <i class="material-icons">maps</i> Carte</a>
             </li>
             <li>
-                <a href="#!">mon profile</a>
+                <a href="#!">
+                    <i class="material-icons">settings</i>Paramètres
+                </a>
             </li>
         </ul>
     </header>
 
     <main>
 
-        <!--//////////////////////////////////////////////////////////////////////////////////////////////////
-             maps should be generated here
-        /////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <!--////////////////////////////////////////////////////////////////////////////////////////////////// maps should be generated here /////////////////////////////////////////////////////////////////////////////////////////////////////-->
         <div class="map-container z-depth-3">
-                <iframe  class="map-container-content" id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15630.679180929914!2d27.4688104!3d-11.6468624!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x51540f372bd869d6!2sNgpictures!5e0!3m2!1sfr!2scd!4v1532932610500"
-                 frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe class="map-container-content" id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15630.679180929914!2d27.4688104!3d-11.6468624!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x51540f372bd869d6!2sNgpictures!5e0!3m2!1sfr!2scd!4v1532932610500"
+                frameborder="0" style="border:0" allowfullscreen="allowfullscreen"></iframe>
             <div class="map-search-btn toolbar">
-                <a class="btn-floating btn-large teal z-depth-2 waves-effect waves-light">
+                <a class="btn-floating btn-large teal z-depth-2 waves-effect waves-light modal-trigger" href="#search-modal">
                     <i class="material-icons">search</i>
                 </a>
             </div>
         </div>
 
+        <div id="search-modal" class="modal">
+            <div class="modal-content">
+                <h4 class="hero-title">Recherche...</h4>
+                <div class="row">
+                    <form action="" method="GET" autocomplete="off">
+                        <div class=" row input-field">
+                            <label for="search">votre recherche...</label>
+                            <input type="search" name="search" id="search" autofocus>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
 
-        <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////
-            about should be generate here
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////
+        footer here
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <footer class="page-footer transparent">
         <div class="parallax-container valign-wrapper map-banner" style="background: url('../../images/walimaji.jpg');">
             <div class="container map-banner-content">
                 <div class="section">
                     <div class="row">
-                        <div class="col s12 m4 center-align">
+                        <div class="col s12 m12">
                             <div class="icon-block">
-                                <h2 class="center white-text"><i class="material-icons">flash_on</i></h2>
-                                <h5 class="center white-text">Speeds up development</h5>
-                                <p class="light white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam consequuntur cum cupiditate dolores ducimus earum eligendi, est, in labore molestiae nostrum officiis perspiciatis possimus quis rem reprehenderit sed ullam!</p>
-                            </div>
-                        </div>
-
-                        <div class="col s12 m4 center-align">
-                            <div class="icon-block">
-                                <h2 class="center white-text"><i class="material-icons">group</i></h2>
-                                <h5 class="center white-text">User Experience Focused</h5>
-
-                                <p class="light white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, aut consequatur distinctio dolore dolorem earum explicabo facere facilis, inventore ipsa itaque nam omnis pariatur possimus rerum sequi similique sunt voluptatibus.</p>
-                            </div>
-                        </div>
-
-                        <div class="col s12 m4 center-align">
-                            <div class="icon-block">
-                                <h2 class="center white-text"><i class="material-icons">settings</i></h2>
-                                <h5 class="center white-text">Easy to work with</h5>
-
-                                <p class="light white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam architecto aspernatur consequuntur cumque dolor enim excepturi, exercitationem id itaque labore laboriosam minus non numquam quis sint tempore, unde voluptatem?</p>
+                                <h4 class="white-text hero-title">A propos</h4>
+                                <p class="light white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam consequuntur cum
+                                    cupiditate dolores ducimus earum eligendi, est, in labore molestiae nostrum officiis
+                                    perspiciatis possimus quis rem reprehenderit sed ullam! Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Eaque inventore tempore assumenda deleniti, ea alias blanditiis delectus,
+                                    fugiat asperiores a cumque neque nobis labore officia eveniet nihil, possimus libero
+                                    explicabo? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, suscipit!
+                                </p>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
             <div class="map-banner-overlay"></div>
         </div>
-    </main>
-
-
-    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////
-            footer here
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-    <footer class="page-footer transparent">
         <div class="footer-copyright grey darken-4">
             <div class="container">
                 © 2018 Copyright walimaji.org
