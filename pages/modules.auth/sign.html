@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="blur"></div>
+        <div class="container">
+            <div class="row col l4 m4 s12">
+                <div class="card-panel z-depth-2 hoverable" id="loginBox">
+                    <form method="POST" action="" data-action="login" autocomplete="off">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <select>
+                                    <option value="" disabled selected>Choississez votre type</option>
+                                    <option value="1">Producteur</option>
+                                    <option value="2">Trader</option>
+                                    <option value="3">Transformateur</option>
+                                    <option value="4">Fournisseur d'intrants</option>
+                                    <option value="5">Gouvernement</option>
+                                </select>
+                                <label>Materialize Select</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <label for="name">nom complet</label>
+                                <input type="text" name="name" id="name" class="validate " value="">
+                                <span class="helper-text red-txt"></span>
+                            </div>
+                            <div class="input-field col s12">
+                                <label for="name">email</label>
+                                <input type="email" name="email" id="email" class="validate " value="">
+                                <span class="helper-text red-txt"></span>
+                            </div>
+                            <div class="input-field col s12">
+                                <label for="password">password</label>
+                                <input type="password" name="password" id="password" class="validate " value="">
+                                <span class="helper-text red-txt"></span>
+                            </div>
+                            <div class="input-field col s12">
+                                <label for="password">password (confirm)</label>
+                                <input type="password" name="password" id="password" class="validate " value="">
+                                <span class="helper-text red-txt"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col s12" id="connectOptions">
+                                <button type="submit" class="btn btn-flat waves-effect teal white-text" id="connect">Inscription</button>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col s12">
+                                <a href="login.html" class="forgot">J'ai déjà un compte</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+<script src="../../assets/js/bin/jquery.min.js"></script>
+<script src="../../assets/js/bin/materialize.min.js"></script>
+<script src="../../assets/js/bin/app.init.js"></script>
+
+</html>

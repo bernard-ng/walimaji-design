@@ -1,10 +1,11 @@
 $('document').ready(function () {
-
-    $('.button-collapse').sideNav ({
+    $('.parallax').parallax();
+    $('.button-collapse').sideNav({
         menuWidth: 300,
         edge: 'left',
     });
     $('select').material_select();
+    $('.modal').modal();
 
 })
  $(document).ready(function () {
