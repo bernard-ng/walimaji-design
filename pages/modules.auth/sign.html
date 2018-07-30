@@ -11,25 +11,12 @@
 
 <body>
     <main>
-        <div class="form-background"></div>
+        <div class="blur"></div>
         <div class="container">
             <div class="row col l4 m4 s12">
                 <div class="card-panel z-depth-2 hoverable" id="loginBox">
-                    <h2 class="hero-title grey-text text-darken-4 center">walimaji</h2>
                     <form method="POST" action="" data-action="login" autocomplete="off">
                         <div class="row">
-                            <div class="input-field col s12">
-                                <label for="name">nom complet</label>
-                                <input type="text" name="name" id="name" class="validate " value="">
-                                <span class="helper-text red-txt"></span>
-                            </div>
-
-                            <div class="input-field col s12">
-                                <label for="name">email</label>
-                                <input type="email" name="email" id="email" class="validate " value="">
-                                <span class="helper-text red-txt"></span>
-                            </div>
-
                             <div class="input-field col s12">
                                 <select>
                                     <option value="" disabled selected>Choississez votre type</option>
@@ -41,7 +28,16 @@
                                 </select>
                                 <label>Materialize Select</label>
                             </div>
-
+                            <div class="input-field col s12">
+                                <label for="name">nom complet</label>
+                                <input type="text" name="name" id="name" class="validate " value="">
+                                <span class="helper-text red-txt"></span>
+                            </div>
+                            <div class="input-field col s12">
+                                <label for="name">email</label>
+                                <input type="email" name="email" id="email" class="validate " value="">
+                                <span class="helper-text red-txt"></span>
+                            </div>
                             <div class="input-field col s12">
                                 <label for="password">password</label>
                                 <input type="password" name="password" id="password" class="validate " value="">
