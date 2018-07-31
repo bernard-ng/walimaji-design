@@ -40,6 +40,26 @@ $txt-light-color: #ddd;
     transform: translateY(0px) translateX(-50%);
 }
 
+.loginBox {
+    border-radius: 3px;
+    border-bottom: 5px solid #247e73;
+    border-top: 5px solid #247e73;
+    margin-top: 10%;
+    padding: 25px !important;
+    width: 100% !important;
+    height: auto;
+    -webkit-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+    position: relative;
+     position: absolute;
+     top: 20px;
+     left: 50%;
+     -webkit-transform: translateX(-50%);
+     -ms-transform: translateX(-50%);
+     transform: translateX(-50%);
+}
+
 .transparent-form {
     border-radius: 3px;
     padding: 15px 10px 15px !important;
