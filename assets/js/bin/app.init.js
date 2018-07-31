@@ -1,5 +1,4 @@
 $('document').ready(function () {
-
     $('.parallax').parallax();
     $('.button-collapse').sideNav({
         menuWidth: 300,
@@ -9,3 +8,6 @@ $('document').ready(function () {
     $('.modal').modal();
 
 })
+ $(document).ready(function () {
+     $('.carousel').carousel();
+ });
