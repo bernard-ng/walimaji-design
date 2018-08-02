@@ -11,57 +11,98 @@
 
 <body>
     <main>
-        <div class="blur"></div>
-        <div class="container">
-            <div class="row col l4 m4 s12">
-                <div class="card-panel z-depth-2 hoverable" id="loginBox">
-                    <form method="POST" action="" data-action="login" autocomplete="off">
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <select>
-                                    <option value="" disabled selected>Choississez votre type</option>
-                                    <option value="1">Producteur</option>
-                                    <option value="2">Trader</option>
-                                    <option value="3">Transformateur</option>
-                                    <option value="4">Fournisseur d'intrants</option>
-                                    <option value="5">Gouvernement</option>
-                                </select>
-                                <label>Materialize Select</label>
+        <div class="carousel carousel-slider center sign" data-indicators="true">
+            <div class="container row">
+                <div class="carousel-item teal">
+                    <div class="card z-depth-2 hoverable loginBox" id="loginBox">
+                        <form method="POST" action="" data-action="login" autocomplete="off">
+                            <h1 class="hero-title">Walimaji</h1>
+                            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias vitae maxime pariatur animi eveniet</p>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <label for="name">name</label>
+                                    <input type="text" name="name" id="name" class="validate " value="">
+                                    <span class="helper-text red-txt">
+                                    </span>
+                                </div>
+                                <div class="input-field col s12">
+                                    <label for="password">email</label>
+                                    <input type="email" name="email" id="email" class="validate " value="">
+                                    <span class="helper-text red-txt">
+                                    </span>
+                                </div>
                             </div>
-                            <div class="input-field col s12">
-                                <label for="name">nom complet</label>
-                                <input type="text" name="name" id="name" class="validate " value="">
-                                <span class="helper-text red-txt"></span>
+                            <div class="row">
+                                <button class="btn" type="submit">suivant</button>
                             </div>
-                            <div class="input-field col s12">
-                                <label for="name">email</label>
-                                <input type="email" name="email" id="email" class="validate " value="">
-                                <span class="helper-text red-txt"></span>
+                        </form>
+                    </div>
+                </div>
+                <div class="carousel-item grey darken-4 " href="#two!">
+                    <div class="card z-depth-2 hoverable loginBox" id="loginBox">
+                        <form method="POST" action="" data-action="login" autocomplete="off">
+                            <h1 class="hero-title">Walimaji</h1>
+                            <p class="">This is your second panel</p>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <label for="name">name</label>
+                                    <input type="text" name="name" id="name" class="validate " value="">
+                                    <span class="helper-text red-txt">
+                                    </span>
+                                </div>
+                                <div class="input-field col s12">
+                                    <label for="email">password</label>
+                                    <input type="email" name="password" id="password" class="validate " value="">
+                                    <span class="helper-text red-txt">
+                                    </span>
+                                </div>
                             </div>
-                            <div class="input-field col s12">
-                                <label for="password">password</label>
-                                <input type="password" name="password" id="password" class="validate " value="">
-                                <span class="helper-text red-txt"></span>
+                        </form>
+                    </div>
+                </div>
+                <div class="carousel-item green " href="#three!">
+                    <div class="card z-depth-2 hoverable loginBox" id="loginBox">
+                        <form method="POST" action="" data-action="login" autocomplete="off">
+                            <h1 class="hero-title">Walimaji</h1>
+                            <p class="">This is your second panel</p>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <label for="name">name</label>
+                                    <input type="text" name="name" id="name" class="validate " value="">
+                                    <span class="helper-text red-txt">
+                                    </span>
+                                </div>
+                                <div class="input-field col s12">
+                                    <label for="password">password</label>
+                                    <input type="password" name="password" id="password" class="validate " value="">
+                                    <span class="helper-text red-txt">
+                                    </span>
+                                </div>
                             </div>
-                            <div class="input-field col s12">
-                                <label for="password">password (confirm)</label>
-                                <input type="password" name="password" id="password" class="validate " value="">
-                                <span class="helper-text red-txt"></span>
+                        </form>
+                    </div>
+                </div>
+                <div class="carousel-item blue " href="#four!">
+                    <div class="card z-depth-2 hoverable loginBox" id="loginBox">
+                        <form method="POST" action="" data-action="login" autocomplete="off">
+                            <h1 class="hero-title">Walimaji</h1>
+                            <p class="">This is your second panel</p>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <label for="name">name</label>
+                                    <input type="text" name="name" id="name" class="validate " value="">
+                                    <span class="helper-text red-txt">
+                                    </span>
+                                </div>
+                                <div class="input-field col s12">
+                                    <label for="password">password</label>
+                                    <input type="password" name="password" id="password" class="validate " value="">
+                                    <span class="helper-text red-txt">
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-
-                            <div class="col s12" id="connectOptions">
-                                <button type="submit" class="btn btn-flat waves-effect teal white-text" id="connect">Inscription</button>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col s12">
-                                <a href="login.html" class="forgot">J'ai déjà un compte</a>
-                            </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -71,5 +112,11 @@
 <script src="../../assets/js/bin/jquery.min.js"></script>
 <script src="../../assets/js/bin/materialize.min.js"></script>
 <script src="../../assets/js/bin/app.init.js"></script>
+<script>
+    $('.carousel.carousel-slider.sign').carousel({
+        fullWidth: true
+    });
+    $('.carousel-fixed-item').carousel('next');
+</script>
 
 </html>
