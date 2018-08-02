@@ -11,8 +11,20 @@
       position: absolute;
       left: 0;
       right: 0;
-      bottom: 20px;
+      top: 20px;
       z-index: 1;
+    }
+
+    .carousel-fixed-item-b {
+       &.with-indicators {
+         bottom: 68px;
+       }
+
+       position: absolute;
+       left: 0;
+       right: 0;
+       bottom: 20px;
+       z-index: 1;
     }
 
     .carousel-item {
@@ -39,9 +51,17 @@
   position: relative;
   width: 100%;
   height: $carousel-height;
-  perspective: 500px;
-  transform-style: preserve-3d;
-  transform-origin: 0% 50%;
+  -webkit-perspective: 500px;
+          perspective: 500px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: 0% 50%;
+      -ms-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+
+  &.sign {
+    height: 100vh !important;
+  }
 
   .carousel-item {
     display: none;
@@ -76,6 +96,10 @@
       width: 8px;
       margin: 24px 4px;
       background-color: rgba(255,255,255,.5);
+
+      -webkit-transition: background-color .3s;
+
+      -o-transition: background-color .3s;
 
       transition: background-color .3s;
       border-radius: 50%;
