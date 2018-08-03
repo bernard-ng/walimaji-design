@@ -9,40 +9,72 @@
     <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 
-<body>
-    <main>
-        <div class="form-background"></div>
-        <div class="container">
-            <div class="row col l4 m4 s12">
-                <div class="card-panel z-depth-2 hoverable" id="loginBox">
-                    <h2 class="hero-title grey-text text-darken-4 center">walimaji</h2>
-                    <form method="POST" action="" data-action="login" autocomplete="off">
-                        <div class="row">
-                            <p>
-                                Veuillez renseigner l'adresse mail avec laquelle vous vous étiez inscrit, afin d'obtenir les instruction de rappel de mot
-                                de passe.
-                            </p>
-                            <div class="input-field col s12">
-                                <label for="name">email</label>
-                                <input type="email" name="email" id="email" class="validate " value="">
-                                <span class="helper-text red-txt">
 
-                                </span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col s12" id="connectOptions">
-                                <button type="submit" class="btn btn-flat waves-effect teal white-text" id="connect">Envoyer</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+<!--/// !!! Important -- import the background on the body ///-->
+<body class="form-background">
+
+<main>
+    <div class="container">
+        <div class="row col l4 m4 s12">
+            <!--/////////////////////////////// login header ///////////////////////////////-->
+            <div class="form-title center-align">
+                <h2 class="hero-title">
+                    <a href="../modules.home/index.html" class="white-text">Walimaji</a>
+                </h2>
+                <p class="white-text light">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolor dolore doloribus earum esse et ex exercitationem explicabo fugiat laboriosam, odio perferendis possimus quasi qui sequi temporibus velit veniam voluptas!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet aspernatur beatae cum cupiditate deleniti dolore doloremque dolores eum exercitationem nisi non nostrum, perspiciatis quia quibusdam sunt, voluptates. Perspiciatis, voluptatum!
+                </p>
             </div>
-        </div>
-    </main>
-</body>
+            <!--/////////////////////////////// login header ///////////////////////////////-->
 
-<script src="../../assets/js/bin/jquery.min.js"></script>
+            <!--////////////////////////////////// login form ///////////////////////////////-->
+            <div class="card-panel z-depth-2 hoverable animated slideInLeft" id="loginBox">
+                <form method="POST" action="" data-action="login" autocomplete="off">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <label for="name">email</label>
+                            <input type="text" name="name" id="name" class="validate " value="">
+                            <span class="helper-text red-txt">
+
+                                    </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12" id="connectOptions">
+                            <button type="submit" class="btn btn-flat waves-effect teal white-text" id="connect">
+                                Connexion
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12">
+                            <a href="sign.html">Créer un compte</a>
+                            <a href="forgot.html" class="forgot">Mot de passe oublié</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--/////////////////////////////// login form ///////////////////////////////-->
+        </div>
+    </div>
+</main>
+
+
+<!-- ////////////////////////////// footer here /////////////////////////////////////////////////// -->
+<footer class="page-footer transparent">
+    <div class="footer-copyright transparent">
+        <div class="container">
+            © 2018 Copyright walimaji.org
+            <a class="grey-text text-lighten-4 right" href="https://github.com/itotafrica/walimaji">code source</a>
+        </div>
+    </div>
+</footer>
+<script src=../../assets/js/bin/jquery.min.js></script>
 <script src="../../assets/js/bin/materialize.min.js"></script>
+<script src="../../assets/js/bin/app.init.js"></script>
+<!-- ////////////////////////////// footer here /////////////////////////////////////////////////// -->
+</body>
 
 </html>
