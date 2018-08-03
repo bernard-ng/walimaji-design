@@ -9,114 +9,91 @@
     <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 
-<body>
-    <main>
-        <div class="carousel carousel-slider center sign" data-indicators="true">
-            <div class="container row">
-                <div class="carousel-item teal">
-                    <div class="card z-depth-2 hoverable loginBox" id="loginBox">
-                        <form method="POST" action="" data-action="login" autocomplete="off">
-                            <h1 class="hero-title">Walimaji</h1>
-                            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias vitae maxime pariatur animi eveniet</p>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <label for="name">name</label>
-                                    <input type="text" name="name" id="name" class="validate " value="">
-                                    <span class="helper-text red-txt">
-                                    </span>
-                                </div>
-                                <div class="input-field col s12">
-                                    <label for="password">email</label>
-                                    <input type="email" name="email" id="email" class="validate " value="">
-                                    <span class="helper-text red-txt">
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <button class="btn" type="submit">suivant</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="carousel-item grey darken-4 " href="#two!">
-                    <div class="card z-depth-2 hoverable loginBox" id="loginBox">
-                        <form method="POST" action="" data-action="login" autocomplete="off">
-                            <h1 class="hero-title">Walimaji</h1>
-                            <p class="">This is your second panel</p>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <label for="name">name</label>
-                                    <input type="text" name="name" id="name" class="validate " value="">
-                                    <span class="helper-text red-txt">
-                                    </span>
-                                </div>
-                                <div class="input-field col s12">
-                                    <label for="email">password</label>
-                                    <input type="email" name="password" id="password" class="validate " value="">
-                                    <span class="helper-text red-txt">
-                                    </span>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="carousel-item green " href="#three!">
-                    <div class="card z-depth-2 hoverable loginBox" id="loginBox">
-                        <form method="POST" action="" data-action="login" autocomplete="off">
-                            <h1 class="hero-title">Walimaji</h1>
-                            <p class="">This is your second panel</p>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <label for="name">name</label>
-                                    <input type="text" name="name" id="name" class="validate " value="">
-                                    <span class="helper-text red-txt">
-                                    </span>
-                                </div>
-                                <div class="input-field col s12">
-                                    <label for="password">password</label>
-                                    <input type="password" name="password" id="password" class="validate " value="">
-                                    <span class="helper-text red-txt">
-                                    </span>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="carousel-item blue " href="#four!">
-                    <div class="card z-depth-2 hoverable loginBox" id="loginBox">
-                        <form method="POST" action="" data-action="login" autocomplete="off">
-                            <h1 class="hero-title">Walimaji</h1>
-                            <p class="">This is your second panel</p>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <label for="name">name</label>
-                                    <input type="text" name="name" id="name" class="validate " value="">
-                                    <span class="helper-text red-txt">
-                                    </span>
-                                </div>
-                                <div class="input-field col s12">
-                                    <label for="password">password</label>
-                                    <input type="password" name="password" id="password" class="validate " value="">
-                                    <span class="helper-text red-txt">
-                                    </span>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-</body>
 
-<script src="../../assets/js/bin/jquery.min.js"></script>
+<!--/// !!! Important -- import the background on the body ///-->
+<body class="form-background">
+
+<main>
+    <div class="container">
+        <div class="row col l4 m4 s12">
+            <!--/////////////////////////////// sign header ///////////////////////////////-->
+            <div class="form-title center-align">
+                <h2 class="hero-title">
+                    <a href="../modules.home/index.html" class="white-text">Walimaji</a>
+                </h2>
+                <p class="white-text light">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing
+                </p>
+            </div>
+            <!--/////////////////////////////// sign header ///////////////////////////////-->
+
+            <!--////////////////////////////////// sign form ///////////////////////////////-->
+            <div class="card-panel z-depth-2 hoverable animated slideInLeft" id="loginBox">
+                <form method="POST" action="" data-action="sign" autocomplete="off">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <label for="name">name</label>
+                            <input type="text" name="name" id="name" class="validate " value="">
+                            <span class="helper-text red-txt">
+
+                                    </span>
+                        </div>
+                        <div class="input-field col s12">
+                            <label for="password">password</label>
+                            <input type="password" name="password" id="password" class="validate " value="">
+                            <span class="helper-text red-txt">
+
+                                    </span>
+                        </div>
+                        <div class="input-field col s12">
+                            <label for="name">name</label>
+                            <input type="text" name="name" id="name" class="validate " value="">
+                            <span class="helper-text red-txt">
+
+                                    </span>
+                        </div>
+                        <div class="input-field col s12">
+                            <label for="password">password</label>
+                            <input type="password" name="password" id="password" class="validate " value="">
+                            <span class="helper-text red-txt">
+
+                                    </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12" id="connectOptions">
+                            <button type="submit" class="btn btn-flat waves-effect teal white-text" id="connect">
+                                Inscription
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12">
+                            <a href="forgot.html" class="forgot">Me connecter</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--/////////////////////////////// sign form ///////////////////////////////-->
+        </div>
+    </div>
+</main>
+
+
+<!-- ////////////////////////////// footer here /////////////////////////////////////////////////// -->
+<footer class="page-footer transparent">
+    <div class="footer-copyright transparent">
+        <div class="container">
+            © 2018 Copyright walimaji.org
+            <a class="grey-text text-lighten-4 right" href="https://github.com/itotafrica/walimaji">code source</a>
+        </div>
+    </div>
+</footer>
+<script src=../../assets/js/bin/jquery.min.js></script>
 <script src="../../assets/js/bin/materialize.min.js"></script>
 <script src="../../assets/js/bin/app.init.js"></script>
-<script>
-    $('.carousel.carousel-slider.sign').carousel({
-        fullWidth: true
-    });
-    $('.carousel-fixed-item').carousel('next');
-</script>
+<!-- ////////////////////////////// footer here /////////////////////////////////////////////////// -->
+</body>
 
 </html>
