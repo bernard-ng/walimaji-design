@@ -9,56 +9,82 @@
     <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 
-<body class="grey lighten-4">
-    <main>
-        <div class="form-background align-center">
-        </div>
-        <div class="container">
-            <div class="row col l4 m4 s12">
-                <div class="card-panel z-depth-2 hoverable" id="loginBox">
-                    <center><h2 class="hero-title grey-text text-darken-4 center ">walimaji</h2></center>
-                    <form method="POST" action="" data-action="login" autocomplete="off">
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <label for="name">name</label>
-                                <input type="text" name="name" id="name" class="validate " value="">
-                                <span class="helper-text red-txt">
 
-                                </span>
-                            </div>
-                            <div class="input-field col s12">
-                                <label for="password">password</label>
-                                <input type="password" name="password" id="password" class="validate " value="">
-                                <span class="helper-text red-txt">
+<!--/// !!! Important -- import the background on the body ///-->
+<body class="form-background">
 
-                                </span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="row col s12" id="cookieOptions">
-                                <input type="checkbox" class="filled-in teal" id="remember" name="remember" value='1' />
-                                <label for="remember">Rester connecté</label>
-                            </div>
-
-                            <div class="col s12" id="connectOptions">
-                                <button type="submit" class="btn btn-flat waves-effect teal white-text" id="connect">Connexion</button>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col s12">
-                                <a href="forgot.html" class="forgot">Mot de passe oublié</a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+<main>
+    <div class="container">
+        <div class="row col l4 m4 s12">
+            <!--/////////////////////////////// login header ///////////////////////////////-->
+            <div class="form-title center-align">
+                <h2 class="hero-title">
+                    <a href="../modules.home/index.html" class="white-text">Walimaji</a>
+                </h2>
+                <p class="white-text light">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing
+                </p>
             </div>
-        </div>
-    </main>
-</body>
+            <!--/////////////////////////////// login header ///////////////////////////////-->
 
-<script src=../../assets/js/bin/jquery.min.js "></script>
+            <!--////////////////////////////////// login form ///////////////////////////////-->
+            <div class="card-panel z-depth-2 hoverable animated slideInLeft" id="loginBox">
+                <form method="POST" action="" data-action="login" autocomplete="off">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <label for="name">name</label>
+                            <input type="text" name="name" id="name" class="validate " value="">
+                            <span class="helper-text red-txt">
+
+                                    </span>
+                        </div>
+                        <div class="input-field col s12">
+                            <label for="password">password</label>
+                            <input type="password" name="password" id="password" class="validate " value="">
+                            <span class="helper-text red-txt">
+
+                                    </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row col s12" id="cookieOptions">
+                            <input type="checkbox" class="filled-in teal" id="remember" name="remember" value='1'/>
+                            <label for="remember">Rester connecté</label>
+                        </div>
+
+                        <div class="col s12" id="connectOptions">
+                            <button type="submit" class="btn btn-flat waves-effect teal white-text" id="connect">
+                                Connexion
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12">
+                            <a href="forgot.html" class="forgot">Mot de passe oublié</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--/////////////////////////////// login form ///////////////////////////////-->
+        </div>
+    </div>
+</main>
+
+
+<!-- ////////////////////////////// footer here /////////////////////////////////////////////////// -->
+<footer class="page-footer transparent">
+    <div class="footer-copyright transparent">
+        <div class="container">
+            © 2018 Copyright walimaji.org
+            <a class="grey-text text-lighten-4 right" href="https://github.com/itotafrica/walimaji">code source</a>
+        </div>
+    </div>
+</footer>
+<script src=../../assets/js/bin/jquery.min.js></script>
 <script src="../../assets/js/bin/materialize.min.js"></script>
-<script src="../../assets//js/bin/app.init.js"></script>
+<script src="../../assets/js/bin/app.init.js"></script>
+<!-- ////////////////////////////// footer here /////////////////////////////////////////////////// -->
+</body>
 
 </html>

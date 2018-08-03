@@ -1,112 +1,52 @@
-$txt-color: #ccc;
-$txt-light-color: #ddd;
+@import "variables";
 
 .form-background {
-   background-image: url('../../images/background.jpg'), -o-linear-gradient(right top, #247e73, #009980, #00b587, #00d088, #12eb83);
-   background-image: url('../../images/background.jpg'), -webkit-gradient(linear, right top, left bottom, from(#247e73), color-stop(#009980), color-stop(#00b587), color-stop(#00d088), to(#12eb83));
-   background-image: url('../../images/background.jpg'), linear-gradient(to left bottom, #247e73, #009980, #00b587, #00d088, #12eb83);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    background-size: cover;
-    background-blend-mode: normal;
-    display: block;
-    height: 300px !important;
-    width: 100%;
-    border-bottom: 5px solid #247e73;
-    position: absolute;
-    top: 0;
-    padding-top: 20px;
+  background: rgba(0, 0, 0, 0.6) url("../../images/walimaji.jpg") no-repeat fixed center !important;
+  background-size: cover !important;
+  background-blend-mode: overlay;
 }
 
-
-#loginBox,
-#signUpBox {
-    border-radius: 3px;
-    border-bottom: 5px solid #247e73;
-    border-top: 5px solid #247e73;
-    margin-top: 10%;
-    padding: 25px !important;
-    width: 100% !important;
-    height: auto;
-    -webkit-transition: all linear 0.3s;
-    -o-transition: all linear 0.3s;
-    transition: all linear 0.3s;
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    -webkit-transform: translateY(0px) translateX(-50%);
-    -ms-transform: translateY(0px) translateX(-50%);
-    transform: translateY(0px) translateX(-50%);
-}
-
-.loginBox {
-    border-radius: 3px;
-    border-bottom: 5px solid #247e73;
-    border-top: 5px solid #247e73;
-    margin-top: 10%;
-    padding: 25px !important;
-    width: 100% !important;
-    height: auto;
-    -webkit-transition: all linear 0.3s;
-    -o-transition: all linear 0.3s;
-    transition: all linear 0.3s;
-    position: relative;
-     position: absolute;
-     top: 20px;
-     left: 50%;
-     -webkit-transform: translateX(-50%);
-     -ms-transform: translateX(-50%);
-     transform: translateX(-50%);
+.form-title {
+  position: relative;
 }
 
 .transparent-form {
-    border-radius: 3px;
-    padding: 15px 10px 15px !important;
-    width: 100% !important;
-    height: auto;
-    -webkit-transition: all linear 0.3s;
-    -o-transition: all linear 0.3s;
-    transition: all linear 0.3s;
-    input {
-        padding-left: 10px;
-    }
+  border-radius: 3px;
+  padding: 15px 10px 15px !important;
+  width: 100% !important;
+  height: auto;
+  -webkit-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+  input {
+    padding-left: 10px;
+  }
 }
 
 @media only screen and (min-width: 500px) {
-    #loginBox,
-    #signUpBox {
-        width: 500px !important;
-        height: auto;
-        position: absolute;
-        top: 50px;
-        left: 50%;
-        -webkit-transform: translateY(-70px) translateX(-50%);
-        -ms-transform: translateY(-70px) translateX(-50%);
-        transform: translateY(-70px) translateX(-50%);
-    }
+  #loginBox,
+  #signUpBox {
+    width: 500px !important;
+    height: auto;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (min-width: 993px) {
-    #loginBox,
-    #signUpBox {
-        width: 500px !important;
-        height: auto;
-        position: absolute;
-        top: 50px;
-        left: 50%;
-        -webkit-transform: translateY(-70px) translateX(-50%);
-        -ms-transform: translateY(-70px) translateX(-50%);
-        transform: translateY(-70px) translateX(-50%);
-    }
+  #loginBox,
+  #signUpBox {
+    width: 500px !important;
+    height: auto;
+    margin: 0 auto;
+  }
 }
 
 #loginBox a.forgot,
 #signUpBox a.forgot {
-    float: right !important
+  float: right !important
 }
 
 #loginBox a.forgot:hover,
 #signUpBox a.forgot:hover {
-    text-decoration: underline
+  text-decoration: underline
 }
