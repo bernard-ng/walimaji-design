@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>my_stock</title>
+    <title>change_state_product</title>
     <link rel="stylesheet" href="../../assets/css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -78,73 +78,39 @@
         </ul>
     </header>
     <main>
-        <div class="row container">
-            <div class="col l12 s12 m7">
-                <ul class="collection">
-                    <li class="collection-header">
-                        <h4>Mon stock </h4>
-                    </li>
-                    <li class="collection-item avatar">
-                        <img src="../../images/apple.png" alt="" class="circle">
-                        <span class="title">Pomme</span>
-                        <p>
-                            Pomme pomme pomme pomme pomme pomme pomme pomme
-                        </p>
-                        <a href="change_state_product.html" class="secondary-content btn-small">
-                            Modifier
-                        </a>
-                    </li>
-                    <li class="collection-item avatar">
-                        <img src="../../images/apple.png" alt="" class="circle">
-                        <span class="title">Mais</span>
-                        <p>
-                            Mais mais mais mais mais mais mais mais mais mais
-                        </p>
-                        <a href="#!" class="secondary-content btn-small">
-                            Modifier
-                        </a>
-                    </li>
-                    <li class="collection-item avatar">
-                        <img src="../../images/apple.png" alt="" class="circle">
-                        <span class="title">Tomates</span>
-                        <p>
-                            Tomates tomates tomates tomates tomates tomates
-                        </p>
-                        <a href="#!" class="secondary-content btn-small">
-                            Modifier
-                        </a>
-                    </li>
-                    <li class="collection-item avatar">
-                        <img src="../../images/apple.png" alt="" class="circle">
-                        <span class="title">Riz</span>
-                        <p>
-                            Riz Riz Riz Riz Riz Riz Riz Riz Riz Riz Riz Riz
-                        </p>
-                        <a href="#!" class="secondary-content btn-small">
-                            Modifier
-                        </a>
-                    </li>
-                    <li class="collection-item avatar">
-                        <img src="../../images/apple.png" alt="" class="circle">
-                        <span class="title">Mais</span>
-                        <p>
-                            Mais mais mais mais mais mais mais mais mais mais
-                        </p>
-                        <a href="#!" class="secondary-content btn-small">
-                            Modifier
-                        </a>
-                    </li>
-                    <li class="collection-item avatar">
-                        <img src="../../images/apple.png" alt="" class="circle">
-                        <span class="title">Mais</span>
-                        <p>
-                            Mais mais mais mais mais mais mais mais mais mais
-                        </p>
-                        <a href="#!" class="secondary-content btn-small">
-                            Modifier
-                        </a>
-                    </li>
-                </ul>
+        <div class="container">
+            <div class="row">
+                <div class="card-panel hoverable animated slideInLeft">
+                    <form method="POST" action="">
+                        <div class="row">
+                            <h4>Modifier produit</h4>
+                            <div class="input-field ">
+                                <select>
+                                    <option>Produit 1</option>
+                                    <option>Produit 2</option>
+                                    <option>Produit 3</option>
+                                </select>
+                                <label>Réference</label>
+                            </div>
+                            <div class="input-field ">
+                                <label>Quantité</label>
+                                <input type="text" class="validate " value="{{product->quantity}}">
+                                <span class="helper-text red-txt">
+
+                                </span>
+                            </div>
+                            <div class="input-field ">
+                                <label>Description</label>
+                                <input type="text" class="validate ">
+                            </div>
+                            <div class="col s12">
+                                <button type="submit" class="btn btn-flat waves-effect teal white-text">
+                                    Valider
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
