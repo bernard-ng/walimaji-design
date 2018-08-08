@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Profile</title>
+    <title>change_pwd.html</title>
     <link rel="stylesheet" href="../../assets/css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -39,53 +39,37 @@
                 </div>
             </nav>
         </div>
-
-        <ul id="slide-out" class="side-nav">
-            <li>
-                <div class="user-view">
-                    <div class="background">
-                        <img src="../../images/vert.jpg">
-                    </div>
-                    <a href="#!user">
-                        <i class="large material-icons">account_circle</i>
-                    </a>
-                    <a href="#!name">
-                        <span class="white-text name">Username</span>
-                    </a>
-                    <a href="#!email">
-                        <span class="white-text email">username@mail.com</span>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <a href="account_producteur.html">Acceuil</a>
-            </li>
-            <li>
-                <a href="my_provider.html">Mes fournisseurs</a>
-            </li>
-            <li>
-                <a href="my_stock.html">Mon stock</a>
-            </li>
-            <li>
-                <a href="#!">Mon abonnés</a>
-            </li>
-            <li>
-                <a href="edit.html" class="active">Mon profil</a>
-            </li>
-            <li>
-                <a href="#" >Deconnexion</a>
-            </li>
-        </ul>
     </header>
     <main>
         <div class="container">
             <div class="row">
-                <div class="col l4 m7 s12">
-                    <h4>Profil de l'utilisateur</h4>
-                    <div class="card">
-                        <img src="../../images/profile.png">
-
-                    </div>
+                <div class="card-panel hoverable animated slideInLeft">
+                    <form method="POST" action="">
+                        <div class="row">
+                            <h4>Changer mot de passe</h4>
+                            <div class="input-field ">
+                                <label>Adresse mail</label>
+                                <input type="email" class="validate ">
+                            </div>
+                            <div class="input-field ">
+                                <label>Ancien mot de passe</label>
+                                <input type="password" class="validate ">
+                            </div>
+                            <div class="input-field ">
+                                <label>Nouveau mot de passe</label>
+                                <input type="password" class="validate ">
+                            </div>
+                            <div class="input-field ">
+                                <label>Confirmer nouveau mot de passe</label>
+                                <input type="password" class="validate ">
+                            </div>
+                            <div class="col s12">
+                                <button type="submit" class="btn btn-flat waves-effect teal white-text">
+                                    Valider
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
