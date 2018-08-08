@@ -47,10 +47,25 @@
   -webkit-filter: blur(40px);
   -o-filter: blur(40px);
   filter: blur(40px);
-
   /* positioning and removing edges */
   top: 0px;
   right: 0px;
   left: 0px;
   padding: 0px;
+}
+
+.jumbotron-small {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background: url("../../images/walimaji.jpg") rgba(0, 0, 0, 0.4);
+    background-blend-mode: overlay;
+    background-size: cover !important;
+    background-position: center;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.3);
+    margin-top: -20px;
+    color: #fff;
 }
