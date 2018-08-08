@@ -24,16 +24,25 @@
                     </div>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
                         <li>
-                            <a href="#">Button 1</a>
+                            <a href="#">
+                                <i class="material-icons">assistant_photo</i>
+                            </a>
                         </li>
                         <li>
-                            <a href="#">Button 2</a>
+                            <a ref='#'>
+                                <i class="material-icons dropdown-button" data-activates='Menu_mon_compte'>account_box</i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="Menu_mon_compte" class="dropdown-content">
+                        <li>
+                            <a href="#">Abonnement</a>
                         </li>
                         <li>
-                            <a href="#">Button 3</a>
+                            <a href="#">Ventes</a>
                         </li>
                         <li>
-                            <a href="#">Button 4</a>
+                            <a href="#">abonnés</a>
                         </li>
                     </ul>
                 </div>
@@ -72,18 +81,32 @@
             <li>
                 <a href="edit.html" class="active">Mon profil</a>
             </li>
-            <li>
-                <a href="#" >Deconnexion</a>
-            </li>
         </ul>
     </header>
     <main>
         <div class="container">
             <div class="row">
-                <div class="col l4 m7 s12">
-                    <h4>Profil de l'utilisateur</h4>
+                <div class="col l3 m7 s12">
+                    <div class="card-panel">
+                        <div class="card-image-headline">
+                            <center>
+                                <img src="../../images/user_profile1.png" class="">
+                            </center>
+                            <h5 style="text-align: center">Username</h5>
+                            <h6 style="text-align: center">Username->type</h6>
+                            <div class="row">
+                                <div class="col">
+                                    <b>Abonnés</b>
+                                </div>
+                                <div class="col">
+                                        <a class="pull-right">1,322</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l8 m7 s12">
                     <div class="card">
-                        <img src="../../images/profile.png">
 
                     </div>
                 </div>
