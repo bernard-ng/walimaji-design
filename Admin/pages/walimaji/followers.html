@@ -15,14 +15,13 @@
     <link rel="stylesheet" href="../../dist/css/ripples.min.css">
     <link rel="stylesheet" href="../../dist/css/MaterialAdminLTE.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" href="../../dist/override.css">
 </head>
 
 <body class="hold-transition skin-blue sidebar-mini">
     <div class="wrapper">
 
-
-        <!--/////////////////////////////////////// default-header //////////////////////////////////////-->
-        <header class="main-header">
+        <header class="main-header white">
             <a href="{{ url('/') }}" class="logo">
                 <span class="logo-mini">
                     <b>WLJ</b>
@@ -32,7 +31,7 @@
                 </span>
             </a>
 
-            <nav class="navbar navbar-static-top">
+            <nav class="navbar navbar-static-top teal z-depth-1">
                 <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button" style="color:#fff">
                     <span class="sr-only">
                         <i class="fa fa-fw fa-bars"></i>
@@ -118,10 +117,8 @@
         </header>
         <!--/////////////////////////////////////// default-header //////////////////////////////////////-->
 
-
-
         <!--/////////////////////////////////////// profile-sidebar //////////////////////////////////////-->
-        <aside class="main-sidebar">
+        <aside class="main-sidebar white z-depth-1">
             <section class="sidebar">
                 <div class="user-panel">
                     <div class="pull-left image">
@@ -176,7 +173,6 @@
 
 
 
-
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
@@ -201,8 +197,8 @@
             <section class="content">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="box box-danger">
-                            <div class="box-body no-padding">
+                        <div class="card">
+                            <div class="card-content">
                                 <ul class="users-list clearfix">
                                     <li>
                                         <img src="../../../uploads/profiles/default.png" alt="User Image">
@@ -249,7 +245,7 @@
                             </div>
                             <!-- /.box-body -->
                             <div class="box-footer text-center">
-                                <a href="javascript:void(0)" class="uppercase">View All Users</a>
+                              <a href="" class="btn">Voir Plus</a>
                             </div>
                             <!-- /.box-footer -->
                         </div>
@@ -262,7 +258,7 @@
         </div>
 
         <!-- /.content-wrapper -->
-        <footer class="main-footer">
+        <footer class="main-footer grey darken-4 white-text">
             <div class="pull-right hidden-xs">
                 <b>Version</b> 2.4.0
             </div>
