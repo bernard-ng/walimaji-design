@@ -83,6 +83,74 @@
                                 </li>
                             </ul>
                         </li>
+                        <!-- Messages: style can be found in dropdown.less-->
+                        <li class="dropdown messages-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-user-o"></i>
+                                <span class="label label-success">4</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">You have 4 followers</li>
+                                <li>
+                                    <!-- inner menu: contains the actual data -->
+                                    <ul class="menu">
+                                        <li>
+                                            <!-- start message -->
+                                            <a href="#">
+                                                <div class="pull-left">
+                                                    <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                                                </div>
+                                                <h4>
+                                                    Alexander Pierce
+                                                    <small>Now</small>
+                                                </h4>
+                                                <p>Traders</p>
+                                            </a>
+                                        </li>
+                                        <!-- end message -->
+                                        <li>
+                                            <a href="#">
+                                                <div class="pull-left">
+                                                    <img src="../../dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                                                </div>
+                                                <h4>
+                                                    Norman Poppins
+                                                    <small> 2 hours ago</small>
+                                                </h4>
+                                                <p>Tranformers</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="pull-left">
+                                                    <img src="../../dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                                                </div>
+                                                <h4>
+                                                    Jane Middelthon
+                                                    <small>Yesterday</small>
+                                                </h4>
+                                                <p>Traders</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="pull-left">
+                                                    <img src="../../dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                                                </div>
+                                                <h4>
+                                                    John Ruscue
+                                                    <small>10 jan</small>
+                                                </h4>
+                                                <p>Transformers</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="footer">
+                                    <a href="#">See All followers</a>
+                                </li>
+                            </ul>
+                        </li>
                         <!-- User Account: style can be found in dropdown.less -->
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -98,21 +166,6 @@
                                         {{user -> type}}
                                         <small>{{user -> date}}</small>
                                     </p>
-                                </li>
-                                <!-- Menu Body -->
-                                <li class="user-body">
-                                    <div class="row">
-                                        <div class="col-xs-4 text-center">
-                                            <a href="#">Abonnements</a>
-                                        </div>
-                                        <div class="col-xs-4 text-center">
-                                            <a href="#">Ventes</a>
-                                        </div>
-                                        <div class="col-xs-4 text-center">
-                                            <a href="#">Abonnés</a>
-                                        </div>
-                                    </div>
-                                    <!-- /.row -->
                                 </li>
                                 <!-- Menu Footer-->
                                 <li class="user-footer">
@@ -157,56 +210,29 @@
                 <!-- sidebar menu: : style can be found in sidebar.less -->
                 <ul class="sidebar-menu" data-widget="tree">
                     <li class="header">Mon compte</li>
-                    <li class="treeview">
+                    <li>
                         <a href="#">
                             <i class="fa fa-dashboard"></i>
                             <span>Acceuil</span>
                         </a>
                     </li>
-                    <li class="treeview">
+                    <li class="active">
                         <a href="#">
                             <i class="fa fa-files-o"></i>
                             <span>Mes fournisseurs</span>
-                            <span class="pull-right-container">
-                                <span class="label label-primary pull-right">4</span>
-                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="followers.html">
+                            <i class="fa fa-th"></i>
+                            <span>Mes abonnes</span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fa fa-th"></i>
-                            <span>Mes abonnes</span>
-                            <span class="pull-right-container">
-                                <small class="label pull-right bg-green">new</small>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="treeview">
-                        <a href="#">
                             <i class="fa fa-pie-chart"></i>
                             <span>Stock</span>
-                            <span class="pull-right-container">
-                                <i class="fa fa-angle-left pull-right"></i>
-                            </span>
                         </a>
-                        <ul class="treeview-menu">
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-circle-o"></i> Stock 1</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-circle-o"></i> Stock 2</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-circle-o"></i> Stock 3</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-circle-o"></i> Stock 4</a>
-                            </li>
-                        </ul>
                     </li>
                 </ul>
             </section>
@@ -218,7 +244,7 @@
             <!-- Content Header (Page header) -->
             <section class="content-header">
                 <h2>
-                    Listes des abonnements
+                    Listes de mes abonnements
                 </h2>
                 <ol class="breadcrumb">
                     <li>
@@ -235,19 +261,6 @@
                     <div class="col-md-12">
                         <!-- USERS LIST -->
                         <div class="box box-danger">
-                            <div class="box-header with-border">
-                                <h3 class="box-title">Abonnements recents</h3>
-
-                                <div class="box-tools pull-right">
-                                    <span class="label label-danger">8 New Members</span>
-                                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
-                                        <i class="fa fa-minus"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-box-tool" data-widget="remove">
-                                        <i class="fa fa-times"></i>
-                                    </button>
-                                </div>
-                            </div>
                             <!-- /.box-header -->
                             <div class="box-body no-padding">
                                 <ul class="users-list clearfix">
@@ -291,14 +304,10 @@
                                         <a class="users-list-name" href="#">Nadia</a>
                                         <span class="users-list-date">15 Jan</span>
                                     </li>
+                                    
                                 </ul>
                                 <!-- /.users-list -->
                             </div>
-                            <!-- /.box-body -->
-                            <div class="box-footer text-center">
-                                <a href="javascript:void(0)" class="uppercase">View All Users</a>
-                            </div>
-                            <!-- /.box-footer -->
                         </div>
                         <!--/.box -->
                     </div>
