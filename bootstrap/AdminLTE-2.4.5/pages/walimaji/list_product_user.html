@@ -142,38 +142,23 @@
                         <p>{{user->name}}</p>
                     </div>
                 </div>
-                <!-- search form -->
-                <form action="#" method="get" class="sidebar-form">
-                    <div class="input-group">
-                        <input type="text" name="q" class="form-control" placeholder="Search...">
-                        <span class="input-group-btn">
-                            <button type="submit" name="search" id="search-btn" class="btn btn-flat">
-                                <i class="fa fa-search"></i>
-                            </button>
-                        </span>
-                    </div>
-                </form>
-                <!-- /.search form -->
                 <!-- sidebar menu: : style can be found in sidebar.less -->
                 <ul class="sidebar-menu" data-widget="tree">
                     <li class="header">Mon compte</li>
-                    <li class="treeview">
+                    <li>
                         <a href="#">
                             <i class="fa fa-dashboard"></i>
                             <span>Acceuil</span>
                         </a>
                     </li>
-                    <li class="treeview">
-                        <a href="#">
+                    <li>
+                        <a href="followers.html">
                             <i class="fa fa-files-o"></i>
                             <span>Mes fournisseurs</span>
-                            <span class="pull-right-container">
-                                <span class="label label-primary pull-right">4</span>
-                            </span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="following.html">
                             <i class="fa fa-th"></i>
                             <span>Mes abonnes</span>
                             <span class="pull-right-container">
@@ -181,32 +166,11 @@
                             </span>
                         </a>
                     </li>
-                    <li class="treeview">
+                    <li class="active">
                         <a href="#">
                             <i class="fa fa-pie-chart"></i>
-                            <span>Stock</span>
-                            <span class="pull-right-container">
-                                <i class="fa fa-angle-left pull-right"></i>
-                            </span>
+                            <span>Mon stock</span>
                         </a>
-                        <ul class="treeview-menu">
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-circle-o"></i> Stock 1</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-circle-o"></i> Stock 2</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-circle-o"></i> Stock 3</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-circle-o"></i> Stock 4</a>
-                            </li>
-                        </ul>
                     </li>
                 </ul>
             </section>
@@ -218,8 +182,7 @@
             <!-- Content Header (Page header) -->
             <section class="content-header">
                 <h1>
-                    Listes des produits
-                    <small>ajout, édition et supression</small>
+                    Listes de mes produits
                 </h1>
                 <ol class="breadcrumb">
                     <li>
