@@ -12,17 +12,16 @@
     <link rel="stylesheet" href="../../vendor/datatables.net-bs/css/dataTables.bootstrap.min.css">
     <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
     <link rel="stylesheet" href="../../dist/css/bootstrap-material-design.min.css">
-    <link rel="stylesheet" href="../../dist/css/ripples.min.css">
     <link rel="stylesheet" href="../../dist/css/MaterialAdminLTE.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" href="../../dist/override.css">
 </head>
 
 <body class="hold-transition skin-blue sidebar-mini">
     <div class="wrapper">
 
 
-        <!--/////////////////////////////////////// default-header //////////////////////////////////////-->
-        <header class="main-header">
+        <header class="main-header white">
             <a href="{{ url('/') }}" class="logo">
                 <span class="logo-mini">
                     <b>WLJ</b>
@@ -32,7 +31,7 @@
                 </span>
             </a>
 
-            <nav class="navbar navbar-static-top">
+            <nav class="navbar navbar-static-top teal z-depth-1">
                 <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button" style="color:#fff">
                     <span class="sr-only">
                         <i class="fa fa-fw fa-bars"></i>
@@ -118,10 +117,8 @@
         </header>
         <!--/////////////////////////////////////// default-header //////////////////////////////////////-->
 
-
-
         <!--/////////////////////////////////////// profile-sidebar //////////////////////////////////////-->
-        <aside class="main-sidebar">
+        <aside class="main-sidebar white z-depth-1">
             <section class="sidebar">
                 <div class="user-panel">
                     <div class="pull-left image">
@@ -150,16 +147,22 @@
                             <span>Relations</span>
                         </a>
                     </li>
-                    <li class="treeview">
+                    <li>
                         <a href="#">
                             <i class="fa fa-th"></i>
-                            <span>Produits</span>
+                            <span>Abonnes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-th"></i>
+                            <span>Abonnements</span>
                         </a>
                     </li>
                     <li class="treeview">
                         <a href="#">
                             <i class="fa fa-th"></i>
-                            <span>Notifications</span>
+                            <span>Produits</span>
                         </a>
                     </li>
                 </ul>
@@ -167,6 +170,8 @@
             </section>
         </aside>
         <!--/////////////////////////////////////// profile-sidebar //////////////////////////////////////-->
+
+
 
 
 
@@ -194,8 +199,8 @@
 
                         <a href="#" class="btn bg-blue">Ajouter un produit</a>
                         <!-- ////////////////////////////////////////// list des produit /////////////////////////////////// -->
-                        <div class="box">
-                            <div class="box-body">
+                        <div class="card-panel">
+                            <div class="">
                                 <table id="productsList1" class="table table-bordered table-hover">
                                     <thead>
                                         <tr>
@@ -803,7 +808,7 @@
 
 
         <!--/////////////////////////////////////// default-footer //////////////////////////////////////-->
-        <footer class="main-footer">
+        <footer class="main-footer grey darken-4 white-text">
             <div class="pull-right hidden-xs">
                 <b>Version</b> 2.4.0
             </div>
@@ -815,7 +820,6 @@
     <script src="../../vendor/jquery/dist/jquery.min.js"></script>
     <script src="../../vendor/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../../dist/js/material.min.js"></script>
-    <script src="../../dist/js/ripples.min.js"></script>
     <script>
         $.material.init();
     </script>
