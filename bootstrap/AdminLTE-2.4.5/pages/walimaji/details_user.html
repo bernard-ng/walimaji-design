@@ -4,13 +4,29 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{title}}</title>
+    <title>AdminLTE 2 | User Profile</title>
+    <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
     <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
+    <!-- Ionicons -->
     <link rel="stylesheet" href="../../bower_components/Ionicons/css/ionicons.min.css">
+    <!-- Theme style -->
     <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+    <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 
@@ -195,18 +211,6 @@
                         <p>{{user->name}}</p>
                     </div>
                 </div>
-                <!-- search form -->
-                <form action="#" method="get" class="sidebar-form">
-                    <div class="input-group">
-                        <input type="text" name="q" class="form-control" placeholder="Search...">
-                        <span class="input-group-btn">
-                            <button type="submit" name="search" id="search-btn" class="btn btn-flat">
-                                <i class="fa fa-search"></i>
-                            </button>
-                        </span>
-                    </div>
-                </form>
-                <!-- /.search form -->
                 <!-- sidebar menu: : style can be found in sidebar.less -->
                 <ul class="sidebar-menu" data-widget="tree">
                     <li class="header">Mon compte</li>
@@ -216,22 +220,25 @@
                             <span>Acceuil</span>
                         </a>
                     </li>
-                    <li class="active">
-                        <a href="#">
+                    <li>
+                        <a href="followers.html">
                             <i class="fa fa-files-o"></i>
                             <span>Mes fournisseurs</span>
+                            <span class="pull-right-container">
+                                <span class="label label-primary pull-right">4</span>
+                            </span>
                         </a>
                     </li>
                     <li>
-                        <a href="followers.html">
+                        <a href="following.html">
                             <i class="fa fa-th"></i>
                             <span>Mes abonnes</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="list_product_user.html">
                             <i class="fa fa-pie-chart"></i>
-                            <span>Stock</span>
+                            <span>Mon stock</span>
                         </a>
                     </li>
                 </ul>
@@ -241,116 +248,231 @@
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
-            <!-- Content Header (Page header) -->
-            <section class="content-header">
-                <h2 style="text-align: center">
-                    Listes de mes abonnements
-                </h2>
-                <ol class="breadcrumb">
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-dashboard"></i> Acceuil</a>
-                    </li>
-                    <li class="active">Stock</li>
-                </ol>
-            </section>
             <!-- Main content -->
             <section class="content">
+
                 <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-10">
-                        <!-- PRODUCT LIST -->
+                    <div class="col-md-3">
+
+                        <!-- Profile Image -->
                         <div class="box box-primary">
-                            <div class="box-body">
-                                <ul class="products-list product-list-in-box">
-                                    <li class="item">
-                                        <div class="product-img">
-                                            <img src="../../dist/img/user3-128x128.jpg" alt="Product Image">
-                                        </div>
-                                        <div class="product-info">
-                                            <a href="javascript:void(0)" class="product-title">Samsung TV
-                                                <div class="btn btn-xs btn-info pull-right"> Ne plus suivre</div>
-                                            </a>
-                                            <span class="product-description">
-                                                Samsung 32" 1080p 60Hz LED Smart HDTV.
-                                            </span>
-                                        </div>
+                            <div class="box-body box-profile">
+                                <img class="profile-user-img img-responsive img-circle" src="../../dist/img/user4-128x128.jpg" alt="User profile picture">
+
+                                <h3 class="profile-username text-center">Nina Mcintire</h3>
+
+                                <p class="text-muted text-center">Software Engineer</p>
+                                <ul class="list-group list-group-unbordered">
+                                    <li class="list-group-item">
+                                        <b>Followers</b>
+                                        <a class="pull-right">1,322</a>
                                     </li>
-                                    <!-- /.item -->
-                                    <li class="item">
-                                        <div class="product-img">
-                                            <img src="../../dist/img/user4-128x128.jpg" alt="Product Image">
-                                        </div>
-                                        <div class="product-info">
-                                            <a href="javascript:void(0)" class="product-title">Bicycle
-                                                <div class="btn btn-xs btn-info pull-right"> Ne plus suivre</div>
-                                            </a>
-                                            <span class="product-description">
-                                                26" Mongoose Dolomite Men's 7-speed, Navy Blue.
-                                            </span>
-                                        </div>
+                                    <li class="list-group-item">
+                                        <b>Following</b>
+                                        <a class="pull-right">543</a>
                                     </li>
-                                    <!-- /.item -->
-                                    <li class="item">
-                                        <div class="product-img">
-                                            <img src="../../dist/img/user2-160x160.jpg" alt="Product Image">
-                                        </div>
-                                        <div class="product-info">
-                                            <a href="javascript:void(0)" class="product-title">Xbox One
-                                                <div class="btn btn-xs btn-info pull-right"> Ne plus suivre</div>
-                                            </a>
-                                            <span class="product-description">
-                                                Xbox One Console Bundle with Halo Master Chief Collection.
-                                            </span>
-                                        </div>
-                                    </li>
-                                    <!-- /.item -->
-                                    <li class="item">
-                                        <div class="product-img">
-                                            <img src="../../dist/img/user7-128x128.jpg" alt="Product Image">
-                                        </div>
-                                        <div class="product-info">
-                                            <a href="javascript:void(0)" class="product-title">PlayStation 4
-                                                <div class="btn btn-xs btn-info pull-right"> Ne plus suivre</div>
-                                            </a>
-                                            <span class="product-description">
-                                                PlayStation 4 500GB Console (PS4)
-                                            </span>
-                                        </div>
-                                    </li>
-                                    <!-- /.item -->
                                 </ul>
+
+                                <a href="#" class="btn btn-primary btn-block">
+                                    <b>Follow</b>
+                                </a>
                             </div>
                             <!-- /.box-body -->
-                            <div class="box-footer text-center">
-                                <a href="javascript:void(0)" class="uppercase">View All Products</a>
+                        </div>
+                        <!-- /.box -->
+
+                        <!-- About Me Box -->
+                        <div class="box box-primary">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">About Me</h3>
                             </div>
-                            <!-- /.box-footer -->
+                            <!-- /.box-header -->
+                            <div class="box-body">
+                                <strong>
+                                    <i class="fa fa-book margin-r-5"></i>Description</strong>
+
+                                <p class="text-muted">
+                                    B.S. in Computer Science from the University of Tennessee at Knoxville
+                                </p>
+
+                                <hr>
+
+                                <strong>
+                                    <i class="fa fa-map-marker margin-r-5"></i> Adresse </strong>
+
+                                <p class="text-muted">Malibu, California</p>
+
+                                <hr>
+                                <strong>
+                                    <i class="fa fa-map-marker margin-r-5"></i> Phone </strong>
+
+                                <p class="text-muted">+243967558661</p>
+
+                                <hr>
+                                <strong>
+                                    <i class="fa fa-map-marker margin-r-5"></i> Adresse Mail </strong>
+
+                                <p class="text-muted">walimaji@gmail.com</p>
+
+                                <hr>
+
+                                <strong>
+                                    <i class="fa fa-pencil margin-r-5"></i>Sociaux</strong>
+
+                                <p>
+                                    <a class="btn btn-social-icon btn-facebook">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a class="btn btn-social-icon btn-instagram">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                    <a class="btn btn-social-icon btn-twitter">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </p>
+
+                                <hr>
+                            </div>
+                            <!-- /.box-body -->
                         </div>
                         <!-- /.box -->
                     </div>
-                    <div class="col-md-1"></div>
+                    <!-- /.col -->
+                    <div class="col-md-9">
+                        <div class="nav-tabs-custom">
+                            <ul class="nav nav-tabs">
+                                <li class="active">
+                                    <a href="#produits" data-toggle="tab">Produits</a>
+                                </li>
+                                <li>
+                                    <a href="#localisation" data-toggle="tab">Localisation</a>
+                                </li>
+                                <li>
+                                    <a href="#stat" data-toggle="tab">Statistiques</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="active tab-pane" id="produits">
+                                    <div class="box-body">
+                                        <ul class="products-list product-list-in-box">
+                                            <li class="item">
+                                                <div class="product-img">
+                                                    <img src="../../dist/img/default-50x50.gif" alt="Product Image">
+                                                </div>
+                                                <div class="product-info">
+                                                    <a href="javascript:void(0)" class="product-title">Xbox One
+                                                        <span class="label label-primary pull-right">Node.js</span>
+                                                    </a>
+                                                    <span class="product-description">
+                                                        Xbox One Console Bundle with Halo Master Chief Collection.
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <!-- /.item -->
+                                            <li class="item">
+                                                <div class="product-img">
+                                                    <img src="../../dist/img/default-50x50.gif" alt="Product Image">
+                                                </div>
+                                                <div class="product-info">
+                                                    <a href="javascript:void(0)" class="product-title">Xbox One
+                                                        <div class="btn btn-xs btn-info pull-right">
+                                                            Follow
+                                                        </div>
+                                                    </a>
+                                                    <span class="product-description">
+                                                        Xbox One Console Bundle with Halo Master Chief Collection.
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <!-- /.item -->
+                                            <li class="item">
+                                                <div class="product-img">
+                                                    <img src="../../dist/img/default-50x50.gif" alt="Product Image">
+                                                </div>
+                                                <div class="product-info">
+                                                    <a href="javascript:void(0)" class="product-title">Xbox One
+                                                        <div class="btn btn-xs btn-info pull-right">
+                                                            Follow
+                                                        </div>
+                                                    </a>
+                                                    <span class="product-description">
+                                                        Xbox One Console Bundle with Halo Master Chief Collection.
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <!-- /.item -->
+                                            <li class="item">
+                                                <div class="product-img">
+                                                    <img src="../../dist/img/default-50x50.gif" alt="Product Image">
+                                                </div>
+                                                <div class="product-info">
+                                                    <a href="javascript:void(0)" class="product-title">Xbox One
+                                                        <div class="btn btn-xs btn-info pull-right">
+                                                            Follow
+                                                        </div>
+                                                    </a>
+                                                    <span class="product-description">
+                                                        Xbox One Console Bundle with Halo Master Chief Collection.
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <!-- /.item -->
+                                        </ul>
+                                    </div>
+                                    <!-- /.box-body -->
+                                    <div class="box-footer text-center">
+                                        <a href="javascript:void(0)" class="uppercase">View All Products</a>
+                                    </div>
+                                </div>
+                                <!-- /.tab-pane -->
+                                <div class="tab-pane" id="localisation">
+                                    <!-- Map box -->
+                                    <div class="box box-solid bg-light-blue-gradient">
+                                        <div class="box-body">
+                                            <div id="world-map" style="height: 450px;"></div>
+                                        </div>
+                                        <!-- /.box-body-->
+                                    </div>
+                                </div>
+                                <!-- /.tab-pane -->
+
+                                <div class="tab-pane" id="stat">
+
+                                </div>
+                                <!-- /.tab-pane -->
+                            </div>
+                            <!-- /.tab-content -->
+                        </div>
+                        <!-- /.nav-tabs-custom -->
+                    </div>
                     <!-- /.col -->
                 </div>
                 <!-- /.row -->
+
             </section>
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
-        <footer class="main-footer">
-            <div class="pull-right hidden-xs">
+        <footer class="main-footer ">
+            <div class="pull-right hidden-xs ">
                 <b>Version</b> 2.4.0
             </div>
             <strong>Copyright &copy; walimaji 2018
-                <a href="#">Tikisuite</a>.</strong> All rights reserved.
+                <a href="# ">Tikisuite</a>.</strong> All rights reserved.
         </footer>
     </div>
     <!-- ./wrapper -->
-    <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../../bower_components/fastclick/lib/fastclick.js"></script>
-    <script src="../../dist/js/adminlte.min.js"></script>
-    <script src="../../dist/js/demo.js"></script>
+
+    <!-- jQuery 3 -->
+    <script src="../../bower_components/jquery/dist/jquery.min.js "></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js "></script>
+    <!-- FastClick -->
+    <script src="../../bower_components/fastclick/lib/fastclick.js "></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.min.js "></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../../dist/js/demo.js "></script>
 </body>
 
 </html>
