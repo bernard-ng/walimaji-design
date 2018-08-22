@@ -147,7 +147,7 @@
                                     </ul>
                                 </li>
                                 <li class="footer">
-                                    <a href="#">See All followers</a>
+                                    <a href="followers.html">See All followers</a>
                                 </li>
                             </ul>
                         </li>
@@ -195,18 +195,6 @@
                         <p>{{user->name}}</p>
                     </div>
                 </div>
-                <!-- search form -->
-                <form action="#" method="get" class="sidebar-form">
-                    <div class="input-group">
-                        <input type="text" name="q" class="form-control" placeholder="Search...">
-                        <span class="input-group-btn">
-                            <button type="submit" name="search" id="search-btn" class="btn btn-flat">
-                                <i class="fa fa-search"></i>
-                            </button>
-                        </span>
-                    </div>
-                </form>
-                <!-- /.search form -->
                 <!-- sidebar menu: : style can be found in sidebar.less -->
                 <ul class="sidebar-menu" data-widget="tree">
                     <li class="header">Mon compte</li>
@@ -243,7 +231,7 @@
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
             <section class="content-header">
-                <h2>
+                <h2 style="text-align: center">
                     Listes de mes abonnements
                 </h2>
                 <ol class="breadcrumb">
@@ -254,67 +242,85 @@
                     <li class="active">Stock</li>
                 </ol>
             </section>
-
             <!-- Main content -->
             <section class="content">
                 <div class="row">
-                    <div class="col-md-12">
-                        <!-- USERS LIST -->
-                        <div class="box box-danger">
-                            <!-- /.box-header -->
-                            <div class="box-body no-padding">
-                                <ul class="users-list clearfix">
-                                    <li>
-                                        <img src="../../dist/img/user1-128x128.jpg" alt="User Image">
-                                        <a class="users-list-name" href="#">Alexander Pierce</a>
-                                        <span class="users-list-date">Today</span>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <!-- PRODUCT LIST -->
+                        <div class="box box-primary">
+                            <div class="box-body">
+                                <ul class="products-list product-list-in-box">
+                                    <li class="item">
+                                        <div class="product-img">
+                                            <img src="../../dist/img/user3-128x128.jpg" alt="Product Image">
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="javascript:void(0)" class="product-title">Samsung TV
+                                                <div class="btn btn-xs btn-info pull-right"> Ne plus suivre</div>
+                                            </a>
+                                            <span class="product-description">
+                                                Samsung 32" 1080p 60Hz LED Smart HDTV.
+                                            </span>
+                                        </div>
                                     </li>
-                                    <li>
-                                        <img src="../../dist/img/user8-128x128.jpg" alt="User Image">
-                                        <a class="users-list-name" href="#">Norman</a>
-                                        <span class="users-list-date">Yesterday</span>
+                                    <!-- /.item -->
+                                    <li class="item">
+                                        <div class="product-img">
+                                            <img src="../../dist/img/user4-128x128.jpg" alt="Product Image">
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="javascript:void(0)" class="product-title">Bicycle
+                                                <div class="btn btn-xs btn-info pull-right"> Ne plus suivre</div>
+                                            </a>
+                                            <span class="product-description">
+                                                26" Mongoose Dolomite Men's 7-speed, Navy Blue.
+                                            </span>
+                                        </div>
                                     </li>
-                                    <li>
-                                        <img src="../../dist/img/user7-128x128.jpg" alt="User Image">
-                                        <a class="users-list-name" href="#">Jane</a>
-                                        <span class="users-list-date">12 Jan</span>
+                                    <!-- /.item -->
+                                    <li class="item">
+                                        <div class="product-img">
+                                            <img src="../../dist/img/user2-160x160.jpg" alt="Product Image">
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="javascript:void(0)" class="product-title">Xbox One
+                                                <div class="btn btn-xs btn-info pull-right"> Ne plus suivre</div>
+                                            </a>
+                                            <span class="product-description">
+                                                Xbox One Console Bundle with Halo Master Chief Collection.
+                                            </span>
+                                        </div>
                                     </li>
-                                    <li>
-                                        <img src="../../dist/img/user6-128x128.jpg" alt="User Image">
-                                        <a class="users-list-name" href="#">John</a>
-                                        <span class="users-list-date">12 Jan</span>
+                                    <!-- /.item -->
+                                    <li class="item">
+                                        <div class="product-img">
+                                            <img src="../../dist/img/user7-128x128.jpg" alt="Product Image">
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="javascript:void(0)" class="product-title">PlayStation 4
+                                                <div class="btn btn-xs btn-info pull-right"> Ne plus suivre</div>
+                                            </a>
+                                            <span class="product-description">
+                                                PlayStation 4 500GB Console (PS4)
+                                            </span>
+                                        </div>
                                     </li>
-                                    <li>
-                                        <img src="../../dist/img/user2-160x160.jpg" alt="User Image">
-                                        <a class="users-list-name" href="#">Alexander</a>
-                                        <span class="users-list-date">13 Jan</span>
-                                    </li>
-                                    <li>
-                                        <img src="../../dist/img/user5-128x128.jpg" alt="User Image">
-                                        <a class="users-list-name" href="#">Sarah</a>
-                                        <span class="users-list-date">14 Jan</span>
-                                    </li>
-                                    <li>
-                                        <img src="../../dist/img/user4-128x128.jpg" alt="User Image">
-                                        <a class="users-list-name" href="#">Nora</a>
-                                        <span class="users-list-date">15 Jan</span>
-                                    </li>
-                                    <li>
-                                        <img src="../../dist/img/user3-128x128.jpg" alt="User Image">
-                                        <a class="users-list-name" href="#">Nadia</a>
-                                        <span class="users-list-date">15 Jan</span>
-                                    </li>
-                                    
+                                    <!-- /.item -->
                                 </ul>
-                                <!-- /.users-list -->
                             </div>
+                            <!-- /.box-body -->
+                            <div class="box-footer text-center">
+                                <a href="javascript:void(0)" class="uppercase">View All Products</a>
+                            </div>
+                            <!-- /.box-footer -->
                         </div>
-                        <!--/.box -->
+                        <!-- /.box -->
                     </div>
+                    <div class="col-md-1"></div>
                     <!-- /.col -->
                 </div>
                 <!-- /.row -->
-
             </section>
             <!-- /.content -->
         </div>
